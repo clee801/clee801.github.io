@@ -1,21 +1,28 @@
-body{
-  font-family: Arial;
-  margin:0;
+/* -----------------------
+   GLOBAL STYLES
+----------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
   background: #FFFBF2; /* beige */
 }
 
 /* -----------------------
-   NAVIGATION & DROPDOWNS
+   HEADER & NAVIGATION
 ----------------------- */
-
-/* Header flex: title left, nav right */
 header {
   display: flex;
-  justify-content: space-between; /* title left, nav right */
+  justify-content: space-between; /* site title left, nav right */
   align-items: center;
-  background: #6b8cff;
+  background: #6b8cff; /* blue */
   color: white;
   padding: 15px 20px;
+}
+
+/* Site title */
+header h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 /* Main nav list */
@@ -38,15 +45,15 @@ nav a {
 
 /* Dropdown container */
 .dropdown {
-  position: relative; /* keeps the dropdown attached to parent */
+  position: relative; /* keeps dropdown attached to parent */
 }
 
 /* Dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;       /* dropdown appears below parent */
-  left: 0;         /* align to left of parent li */
+  top: 100%;      /* directly below parent */
+  left: 0;        /* align with parent */
   background: #b7dfff; /* periwinkle */
   padding: 10px 0;
   list-style: none;
@@ -56,23 +63,29 @@ nav a {
   border-radius: 5px;
 }
 
-/* Make sure links fill the dropdown */
+/* Dropdown links */
 .dropdown-content li a {
   display: block;
   padding: 8px 15px;
-  color: #2c4b9b;
+  color: #2c4b9b; /* dark blue */
   text-align: left;
   border-radius: 3px;
+  transition: background 0.2s;
 }
 
-/* Keep dropdown visible when hovering */
+/* Hover effect on links */
+.dropdown-content li a:hover {
+  background-color: #9ff3d1; /* mint green */
+}
+
+/* Show dropdown when hovering parent */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* =================
+/* -----------------------
    MOBILE-FRIENDLY
-================= */
+----------------------- */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -83,54 +96,75 @@ nav a {
   .dropdown-content {
     position: relative;
     top: 0;
-    right: auto;
+    left: 0;
     min-width: 100%;
     border-radius: 0;
   }
-}
-/* HERO SECTION */
 
-.hero{
-  background:#b7dfff;
-  padding:60px;
-  text-align:center;
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
-.hero h2{
-  color:#2c4b9b;
+/* -----------------------
+   HERO SECTION
+----------------------- */
+.hero {
+  background: #b7dfff;
+  padding: 60px;
+  text-align: center;
 }
 
-.hero button{
-  background:#9ff3d1;
-  border:none;
-  padding:12px 20px;
-  font-size:16px;
-  border-radius:8px;
-  cursor:pointer;
+.hero h2 {
+  color: #2c4b9b;
 }
 
-/* INFO CARDS */
-
-.info{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:40px;
+.hero button {
+  background: #9ff3d1;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.card{
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  width:200px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+/* -----------------------
+   INFO CARDS
+----------------------- */
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
 }
 
-/* FOOTER */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
 
-footer{
-  background:#6b8cff;
-  color:white;
-  text-align:center;
-  padding:10px;
+/* -----------------------
+   FOOTER
+----------------------- */
+footer {
+  background: #6b8cff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+ /* ========================
+    DROPDOWN SMOOTH HOVER
+======================== */
+.dropdown-content {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* smooth fade */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* still needed to show dropdown */
+  opacity: 1;     /* fade in */
 }
