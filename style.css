@@ -89,7 +89,7 @@ nav a {
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    background: #6b8cff;
+    background: #9a719d; /* plum */
     width: 100%;
   }
 
@@ -110,7 +110,7 @@ nav a {
    HERO SECTION
 ----------------------- */
 .hero {
-  background: #b7dfff;
+  background: #9a719d; /* plum */
   padding: 60px;
   text-align: center;
 }
@@ -120,7 +120,7 @@ nav a {
 }
 
 .hero button {
-  background: #9ff3d1;
+  background: #ffc560; /* yellow gold */
   border: none;
   padding: 12px 20px;
   font-size: 16px;
@@ -150,7 +150,7 @@ nav a {
    FOOTER
 ----------------------- */
 footer {
-  background: #6b8cff;
+  background: #ffc560; /* yellow gold */
   color: white;
   text-align: center;
   padding: 10px;
