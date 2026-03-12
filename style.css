@@ -54,7 +54,7 @@ nav a {
   position: absolute;
   top: 100%;      /* directly below parent */
   left: 0;        /* align with parent */
-  background: #fde5b1; /* periwinkle */
+  background: #fde5b1; /* light yellow beige */
   padding: 10px 0;
   list-style: none;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
@@ -67,7 +67,7 @@ nav a {
 .dropdown-content li a {
   display: block;
   padding: 8px 15px;
-  color: #ffc560; /* dark blue */
+  color: #ffc560; /* yellow gold */
   text-align: left;
   border-radius: 3px;
   transition: background 0.2s;
@@ -75,7 +75,7 @@ nav a {
 
 /* Hover effect on links */
 .dropdown-content li a:hover {
-  background-color: #9a719d; /* mint green */
+  background-color: #9a719d; /* plum */
 }
 
 /* Show dropdown when hovering parent */
