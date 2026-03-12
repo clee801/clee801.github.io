@@ -4,34 +4,30 @@ body{
   background: #FFFBF2; /* beige */
 }
 
-/* HEADER */
+/* -----------------------
+   NAVIGATION & DROPDOWNS
+----------------------- */
 
+/* Header flex: title left, nav right */
 header {
   display: flex;
-  justify-content: space-between; /* title left, menu right */
+  justify-content: space-between; /* title left, nav right */
   align-items: center;
   background: #6b8cff;
   color: white;
   padding: 15px 20px;
 }
 
-h1{
-  margin:0;
-}
-
-/* =======================
-   DROPDOWN NAVIGATION
-======================= */
-
+/* Main nav list */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0;
   display: flex;
-  justify-content: flex-end; /* aligns the main menu to the right */
   gap: 20px;
 }
 
+/* Nav links */
 nav a {
   color: white;
   text-decoration: none;
@@ -42,64 +38,60 @@ nav a {
 
 /* Dropdown container */
 .dropdown {
-  position: relative;
+  position: relative; /* keeps the dropdown attached to parent */
 }
 
 /* Dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;       /* below the parent menu item */
-  right: 0;        /* aligns to right edge of parent */
+  top: 100%;       /* directly below parent */
+  right: 0;        /* align right edge */
   background: #b7dfff; /* periwinkle */
   padding: 10px 0;
   list-style: none;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 1000;
-  min-width: 220px;      /* width of dropdown */
+  min-width: 220px; 
   border-radius: 5px;
 }
 
-/* Links inside dropdown */
+/* Dropdown links */
 .dropdown-content li a {
   display: block;
   padding: 8px 15px;
-  text-align: left;          /* text alignment */
-  color: #2c4b9b;           /* dark blue text */
-  transition: background 0.2s;
+  color: #2c4b9b; /* dark blue */
+  text-align: left;
   border-radius: 3px;
 }
 
-/* Hover effect on dropdown links */
+/* Hover effect for links */
 .dropdown-content li a:hover {
-  background-color: #9ff3d1; /* mint green hover */
+  background-color: #9ff3d1; /* mint green */
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
+/* Show dropdown when hovering parent */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
-/* Mobile-friendly toggle */
+/* =================
+   MOBILE-FRIENDLY
+================= */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: 0;
-    background-color: #6b8cff; /* main nav color */
+    background: #6b8cff;
     width: 100%;
-    justify-content: flex-end; /* moves the menu items to the right */
   }
 
   .dropdown-content {
     position: relative;
-    right: auto;
     top: 0;
+    right: auto;
     min-width: 100%;
     border-radius: 0;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
 }
 /* HERO SECTION */
