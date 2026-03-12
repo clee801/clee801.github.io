@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between; /* site title left, nav right */
   align-items: center;
-  background: #ffc560; /* yellow gold color */
+  background: #9a719d; /* plum color */
   color: white;
   padding: 15px 20px;
 }
