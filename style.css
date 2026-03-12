@@ -45,34 +45,28 @@ nav a {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;       /* directly below parent */
-  right: 0;        /* align right edge */
+  top: 100%;       /* dropdown appears below parent */
+  left: 0;         /* align to left of parent li */
   background: #b7dfff; /* periwinkle */
   padding: 10px 0;
   list-style: none;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 1000;
-  min-width: 220px; 
+  min-width: 220px;
   border-radius: 5px;
 }
 
-/* Dropdown links */
+/* Make sure links fill the dropdown */
 .dropdown-content li a {
   display: block;
   padding: 8px 15px;
-  color: #2c4b9b; /* dark blue */
+  color: #2c4b9b;
   text-align: left;
   border-radius: 3px;
 }
 
-/* Hover effect for links */
-.dropdown-content li a:hover {
-  background-color: #9ff3d1; /* mint green */
-}
-
-/* Show dropdown when hovering parent */
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+/* Keep dropdown visible when hovering */
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
