@@ -47,7 +47,7 @@ nav a{
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background: white;
   padding: 10px;
   list-style: none;
