@@ -16,75 +16,88 @@ h1{
   margin:0;
 }
 
-/* NAVIGATION */
+/* =======================
+   DROPDOWN NAVIGATION
+======================= */
 
-nav ul{
-  list-style:none;
-  padding:0;
-  margin:10px 0 0 0;
-  display:flex;
-  gap:20px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end; /* aligns the main menu to the right */
+  gap: 20px;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
 }
 
-/* DROPDOWN */
-
-.dropdown{
-  position:relative;
-}
-
-/* DROPDOWN FIX */
+/* Dropdown container */
 .dropdown {
-  position: relative; /* keep this */
+  position: relative;
 }
 
+/* Dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  right: 0;
-  background: white;
-  padding: 10px;
+  top: 100%;       /* below the parent menu item */
+  right: 0;        /* aligns to right edge of parent */
+  background: #b7dfff; /* periwinkle */
+  padding: 10px 0;
   list-style: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 1000;
-
-  min-width: 220px; /* makes dropdown wider */
-  width: auto;       /* or set exact width like 220px */
+  min-width: 220px;      /* width of dropdown */
+  border-radius: 5px;
 }
 
-.dropdown-content li {
-  margin: 0;
-}
-
+/* Links inside dropdown */
 .dropdown-content li a {
-  display: block; /* makes the entire link clickable */
-  padding: 5px 10px;
-  color: #333;
-  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+  text-align: left;          /* text alignment */
+  color: #2c4b9b;           /* dark blue text */
+  transition: background 0.2s;
+  border-radius: 3px;
 }
 
+/* Hover effect on dropdown links */
 .dropdown-content li a:hover {
-  background-color: #b7dfff; /* periwinkle hover color */
+  background-color: #9ff3d1; /* mint green hover */
 }
 
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-content a{
-  color:#333;
-}
+/* Mobile-friendly toggle */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    background-color: #6b8cff; /* main nav color */
+    width: 100%;
+  }
 
-.dropdown:hover .dropdown-content{
-  display:block;
-}
+  .dropdown-content {
+    position: relative;
+    right: auto;
+    top: 0;
+    min-width: 100%;
+    border-radius: 0;
+  }
 
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
 /* HERO SECTION */
 
 .hero{
