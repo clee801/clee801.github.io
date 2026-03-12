@@ -6,10 +6,13 @@ body{
 
 /* HEADER */
 
-header{
-  background:#6b8cff;
-  color:white;
-  padding:15px;
+header {
+  display: flex;
+  justify-content: space-between; /* title left, menu right */
+  align-items: center;
+  background: #6b8cff;
+  color: white;
+  padding: 15px 20px;
 }
 
 h1{
