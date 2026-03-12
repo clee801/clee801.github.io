@@ -1,1 +1,103 @@
+body{
+  font-family: Arial;
+  margin:0;
+  background:#f8faff;
+}
 
+/* HEADER */
+
+header{
+  background:#6b8cff;
+  color:white;
+  padding:15px;
+}
+
+h1{
+  margin:0;
+}
+
+/* NAVIGATION */
+
+nav ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 0 0;
+  display:flex;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+  position:relative;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:white;
+  padding:10px;
+  list-style:none;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+  color:#333;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+/* HERO SECTION */
+
+.hero{
+  background:#b7dfff;
+  padding:60px;
+  text-align:center;
+}
+
+.hero h2{
+  color:#2c4b9b;
+}
+
+.hero button{
+  background:#9ff3d1;
+  border:none;
+  padding:12px 20px;
+  font-size:16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* INFO CARDS */
+
+.info{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  width:200px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+  background:#6b8cff;
+  color:white;
+  text-align:center;
+  padding:10px;
+}
