@@ -134,15 +134,19 @@ nav li:hover > a{
 /* HERO */
 
 /* HERO SECTION */
-
 .hero{
 display:flex;
 justify-content:space-between;
 align-items:flex-start;
 padding:80px;
-background:#9a719d url("crochet-pattern.png");
-background-size:300px;
-background-repeat:repeat;
+
+/* layered background */
+background:
+linear-gradient(rgba(154,113,157,0.88), rgba(154,113,157,0.88)),
+url("crochet-pattern.png");
+
+background-size:cover, 350px;
+background-repeat:no-repeat, repeat;
 }
 
 /* Headline on the right */
