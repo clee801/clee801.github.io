@@ -254,3 +254,28 @@ color:#ffc560;
 width:260px;
 border-radius:12px;
 }
+
+/* PAGE HERO (for inner pages like About, Impact, Team) */
+
+.page-hero{
+background:#9a719d;
+padding:90px 20px;
+text-align:center;
+margin-bottom:50px;
+}
+
+.page-hero h1{
+font-family:'Fraunces', serif;
+font-size:54px;
+color:#fde5b1;
+margin-bottom:15px;
+}
+
+.page-hero p{
+font-family:'Poppins', sans-serif;
+color:#fff2cf;
+font-size:18px;
+max-width:750px;
+margin:auto;
+line-height:1.7;
+}
