@@ -90,15 +90,20 @@ font-weight:600;
   /* overflow: hidden;  <-- remove this if you added it */
 }
 
-/* Dropdown links */
 .dropdown-content li a {
   display: block;
   color: #9a719d;
-  padding: 10px 16px;        /* extra horizontal padding to prevent scaling overflow */
-  border-radius: 25px;       /* rounded bubbles */
-  transition: all 0.25s ease;
+  padding: 10px 20px;          /* more space so bubble fits */
+  border-radius: 25px;          /* rounded bubble */
+  transition: all 0.2s ease;
+  background: rgba(154,113,157,0.05); /* subtle base bubble */
+  text-decoration: none;
 }
 
+.dropdown-content li a:hover {
+  background: rgba(154,113,157,0.15); /* slightly brighter on hover */
+  /* transform: scale(1.05); <-- optional, can skip if you want it stable */
+}
 /* Bubble hover effect */
 .dropdown-content li a:hover {
   background: rgba(154,113,157,0.1); /* slightly lighter background */
