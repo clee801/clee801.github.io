@@ -104,21 +104,43 @@ display:block;
 
 /* HERO */
 
-.hero {
+/* HERO SECTION */
+
+.hero{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px 80px;
-  background-color: #9a719d; /* base color */
-  
-  /* background crochet pattern */
-  background-image: 
-    url('crochet-pattern.png'), 
-    linear-gradient(rgba(154, 113, 157, 0.3), rgba(154, 113, 157, 0.1));
-    
-  background-repeat: repeat;
-  background-size: auto; /* keeps pattern small and tileable */
-  background-blend-mode: overlay;
+  background-color: #9a719d; /* plain plum color */
+}
+
+/* Headline on the right */
+.headline{
+  width:50%;
+  text-align:right;
+}
+
+.headline h2{
+  font-family:'Clash Display', sans-serif;
+  font-size:64px;
+  color:#fde5b1; /* light yellow */
+  line-height:1.1;
+}
+
+/* Mission on the left */
+.mission{
+  width:40%;
+}
+
+.mission h3{
+  color:#ffc560;
+  font-family:'Fraunces', serif;
+  margin-bottom:10px;
+}
+
+.mission p{
+  color:#fff2cf; /* lighter yellow for readability */
+  line-height:1.6;
 }
 
 /* headline on the right */
