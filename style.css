@@ -136,11 +136,13 @@ nav li:hover > a{
 /* HERO SECTION */
 
 .hero{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px 80px;
-  background-color: #9a719d; /* plain plum color */
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+padding:80px;
+background:#9a719d url("crochet-pattern.png");
+background-size:300px;
+background-repeat:repeat;
 }
 
 /* Headline on the right */
