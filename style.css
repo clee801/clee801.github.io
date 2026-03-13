@@ -170,8 +170,12 @@ border-radius:18px;
 }
 
 .mission h3{
-color:#9a719d;
-margin-bottom:10px;
+color:#f2b437;   /* deeper yellow */
+font-family:'Fraunces', serif;
+text-align:center;
+margin-bottom:12px;
+font-weight:600;
+letter-spacing:1px;
 }
 
 .mission p{
