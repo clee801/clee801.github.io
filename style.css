@@ -78,16 +78,16 @@ font-weight:600;
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 110%;
+  top: 110%;      /* just below parent */
   left: 0;
   background: #ffffff;
-  padding: 10px 0;           /* more padding to avoid overflow */
+  padding: 10px 0;
   min-width: 160px;
   border-radius: 12px;
   border: 2px solid #e5d4f2;
   box-shadow: 0 4px 10px rgba(0,0,0,.1);
-  overflow: hidden;           /* contains the bubbles */
   z-index: 1000;
+  /* overflow: hidden;  <-- remove this if you added it */
 }
 
 /* Dropdown links */
