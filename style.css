@@ -201,9 +201,13 @@ width:40%;
 }
 
 .mission h3{
-color:#ffc560;
+color:#f2b437;
 font-family:'Fraunces', serif;
-margin-bottom:10px;
+text-align:center;
+margin-bottom:16px;
+font-weight:700;
+letter-spacing:1px;
+font-size:32px;
 }
 
 .mission p{
