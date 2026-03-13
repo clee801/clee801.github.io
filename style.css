@@ -31,43 +31,48 @@ border-bottom:4px solid #ffc560;
 height:90px;
 }
 
-/* NAV */
+/* ----- NAVIGATION & DROPDOWNS ----- */
 
+/* Main nav list */
 nav ul{
-list-style:none;
-display:flex;
-gap:25px;
-align-items:center;
-margin:0;
-padding:0;
+  list-style:none;
+  display:flex;
+  gap:25px;
+  align-items:center;
+  margin:0;
+  padding:0;
 }
 
-/* NAV BUBBLES */
-
+/* Nav bubbles */
 nav li a{
-text-decoration:none;
-color:white;
-font-weight:500;
-padding:12px 20px;
-border-radius:30px;
-transition:all .25s ease;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  padding:12px 20px;
+  border-radius:30px;
+  transition:all 0.25s ease;
+  background: rgba(255,255,255,0); /* no base background, bubble appears on hover */
 }
 
-/* bubble appears on hover */
-nav li:hover a{
-background:rgba(255,255,255,0.25);
-transform:scale(1.08);
+/* Bubble hover effect */
+nav li:hover > a{
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.08);
 }
 
-/* SUPPORT BUTTON */
-
+/* Support Us button */
 .support-button a{
-background:#ffc560;
-color:#333;
-font-weight:600;
+  background:#ffc560;
+  color:#333;
+  font-weight:600;
+  padding:12px 20px;
+  border-radius:30px;
+  transition:all 0.25s ease;
 }
 
-/* DROPDOWNS */
+.support-button a:hover{
+  background:#ffb347; /* orange accent on hover */
+}
 
 /* Dropdown container */
 .dropdown {
@@ -78,38 +83,54 @@ font-weight:600;
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 110%;      /* just below parent */
-  left: 0;
-  background: #ffffff;
-  padding: 10px 0;
-  min-width: 160px;
-  border-radius: 12px;
-  border: 2px solid #e5d4f2;
-  box-shadow: 0 4px 10px rgba(0,0,0,.1);
-  z-index: 1000;
-  /* overflow: hidden;  <-- remove this if you added it */
+  top:110%;  /* dropdown below parent */
+  left:0;
+  background:#ffffff;
+  padding:10px 0;
+  min-width:140px; /* narrow so Impact dropdown fits */
+  border-radius:12px;
+  border:2px solid #e5d4f2; /* light purple border */
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  z-index:1000;
 }
 
-.dropdown-content li a {
-  display: block;
-  color: #9a719d;
-  padding: 10px 20px;          /* more space so bubble fits */
-  border-radius: 25px;          /* rounded bubble */
+/* Dropdown links with bubble effect */
+.dropdown-content li a{
+  display:block;
+  padding:10px 16px;
+  color:#9a719d; /* dark plum text */
+  text-decoration:none;
+  border-radius:12px; /* rounded rectangles */
+  background: rgba(154,113,157,0.05); /* subtle bubble base */
   transition: all 0.2s ease;
-  background: rgba(154,113,157,0.05); /* subtle base bubble */
-  text-decoration: none;
 }
 
-.dropdown-content li a:hover {
-  background: rgba(154,113,157,0.15); /* slightly brighter on hover */
-  /* transform: scale(1.05); <-- optional, can skip if you want it stable */
-}
-/* Bubble hover effect */
-.dropdown-content li a:hover {
-  background: rgba(154,113,157,0.1); /* slightly lighter background */
-  transform: scale(1.05);            /* slightly bigger bubble */
+/* Hover effect on dropdown links */
+.dropdown-content li a:hover{
+  background: rgba(154,113,157,0.15); /* slightly brighter bubble */
+  transform: scale(1.05);
 }
 
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+/* MOBILE-FRIENDLY */
+@media screen and (max-width:768px){
+  nav ul{
+    flex-direction:column;
+    background:#9a719d;
+    width:100%;
+  }
+
+  .dropdown-content{
+    position:relative;
+    top:0;
+    left:0;
+    min-width:100%;
+  }
+}
 /* HERO */
 
 /* HERO SECTION */
