@@ -1,157 +1,182 @@
-/* =====================
-GLOBAL STYLES
-===================== */
+/* GLOBAL */
 
 body{
-  font-family:'Poppins', sans-serif;
-  margin:0;
-  background:#FFFBF2;
-  color:#333;
+margin:0;
+background:#FFFBF2;
+font-family:'Poppins', sans-serif;
+color:#333;
 }
 
-/* Headings use Fraunces */
+/* HEADINGS */
 
-h1,h2,h3,h4{
-  font-family:'Fraunces', serif;
+h1,h2,h3{
+font-family:'Fraunces', serif;
+font-weight:600;
 }
 
-/* =====================
-HEADER
-===================== */
+/* HEADER */
 
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:#9a719d;
-  padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#9a719d;
+border-bottom:4px solid #ffc560;
 }
 
-/* Logo */
+/* LOGO */
 
 .logo img{
-  height:75px;
-  width:auto;
-  display:block;
+height:90px;
 }
 
-/* =====================
-NAVIGATION
-===================== */
+/* NAV */
 
 nav ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  gap:25px;
+list-style:none;
+display:flex;
+gap:25px;
+align-items:center;
+margin:0;
+padding:0;
 }
 
-nav a{
-  text-decoration:none;
-  color:white;
-  font-weight:500;
-  padding:10px 14px;
-  display:block;
+/* NAV BUBBLES */
+
+nav li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+padding:10px 18px;
+border-radius:25px;
+background:rgba(255,255,255,0.15);
+transition:all .2s ease;
 }
 
-/* Dropdown container */
+nav li a:hover{
+background:rgba(255,255,255,0.35);
+transform:scale(1.05);
+}
+
+/* SUPPORT BUTTON */
+
+.support-button a{
+background:#ffc560;
+color:#333;
+font-weight:600;
+}
+
+/* DROPDOWNS */
 
 .dropdown{
-  position:relative;
+position:relative;
 }
-
-/* Dropdown menu */
 
 .dropdown-content{
-  display:none;
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#fde5b1;
-  list-style:none;
-  padding:10px 0;
-  min-width:220px;
-  border-radius:6px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.15);
+display:none;
+position:absolute;
+top:110%;
+left:0;
+background:#ffffff;
+padding:8px 0;
+min-width:160px;
+border-radius:12px;
+border:2px solid #e5d4f2;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
-
-/* Dropdown links */
 
 .dropdown-content li a{
-  color:#9a719d;
-  padding:10px 18px;
+display:block;
+color:#9a719d;
+padding:8px 16px;
+background:none;
+border-radius:0;
 }
-
-/* Hover effects */
 
 .dropdown-content li a:hover{
-  background:#9a719d;
-  color:white;
+background:#f6effc;
 }
-
-/* Show dropdown */
 
 .dropdown:hover .dropdown-content{
-  display:block;
+display:block;
 }
 
-/* =====================
-HERO SECTION
-===================== */
+/* HERO */
 
 .hero{
-  text-align:center;
-  padding:90px 60px;
-  background:#9a719d;
-  color:white;
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+padding:80px 80px 40px 80px;
 }
 
-.hero h2{
-  font-size:42px;
-  font-weight:600;
-  margin-bottom:20px;
+.headline{
+width:50%;
+text-align:right;
 }
 
-.hero p{
-  max-width:650px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.6;
+.headline h2{
+font-family:'Clash Display', sans-serif;
+font-size:60px;
+color:#fde5b1;
+line-height:1.1;
 }
 
-/* =====================
-INFO CARDS
-===================== */
-
-.info{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  padding:70px 40px;
-  flex-wrap:wrap;
+.mission{
+width:40%;
 }
 
-.card{
-  background:white;
-  width:250px;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.08);
-  text-align:center;
+.mission h3{
+color:#ffc560;
+font-family:'Fraunces', serif;
+margin-bottom:10px;
 }
 
-.card h3{
-  margin-bottom:10px;
+.mission p{
+color:#fff1d0;
+line-height:1.6;
 }
 
-/* =====================
-FOOTER
-===================== */
+/* STATS */
 
-footer{
-  background:#ffc560;
-  text-align:center;
-  padding:15px;
-  font-size:14px;
+.stats{
+display:flex;
+justify-content:center;
+gap:120px;
+padding:60px;
+}
+
+.stat h3{
+font-family:'Clash Display', sans-serif;
+font-size:48px;
+color:#ffd27a;
+margin:0;
+}
+
+.stat p{
+text-align:center;
+}
+
+/* PHOTOS */
+
+.photos{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px 80px 80px 80px;
+}
+
+.photo-block{
+text-align:center;
+}
+
+.photo-block h4{
+font-family:'Clash Display', sans-serif;
+margin-bottom:10px;
+}
+
+.photo-block img{
+width:280px;
+border-radius:12px;
 }
