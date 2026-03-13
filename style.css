@@ -289,3 +289,16 @@ max-width:750px;
 margin:auto;
 line-height:1.7;
 }
+
+.photo-stat{
+font-family:'Fraunces', serif;
+font-size:48px;
+color:#ffc560;
+margin-bottom:12px;
+}
+
+.photo-block p{
+margin-top:8px;
+font-size:16px;
+color:#333;
+}
