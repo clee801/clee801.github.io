@@ -69,37 +69,40 @@ font-weight:600;
 
 /* DROPDOWNS */
 
-.dropdown{
-position:relative;
+/* Dropdown container */
+.dropdown {
+  position: relative;
 }
 
-.dropdown-content{
-display:none;
-position:absolute;
-top:110%;
-left:0;
-background:#ffffff;
-padding:6px 0;
-min-width:150px;
-border-radius:12px;
-border:2px solid #e5d4f2;
-box-shadow:0 4px 10px rgba(0,0,0,.1);
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #ffffff;
+  padding: 10px 0;           /* more padding to avoid overflow */
+  min-width: 160px;
+  border-radius: 12px;
+  border: 2px solid #e5d4f2;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  overflow: hidden;           /* contains the bubbles */
+  z-index: 1000;
 }
 
-.dropdown-content li a{
-display:block;
-color:#9a719d;
-padding:8px 16px;
-background:none;
-border-radius:0;
+/* Dropdown links */
+.dropdown-content li a {
+  display: block;
+  color: #9a719d;
+  padding: 10px 16px;        /* extra horizontal padding to prevent scaling overflow */
+  border-radius: 25px;       /* rounded bubbles */
+  transition: all 0.25s ease;
 }
 
-.dropdown-content li a:hover{
-background:#f6effc;
-}
-
-.dropdown:hover .dropdown-content{
-display:block;
+/* Bubble hover effect */
+.dropdown-content li a:hover {
+  background: rgba(154,113,157,0.1); /* slightly lighter background */
+  transform: scale(1.05);            /* slightly bigger bubble */
 }
 
 /* HERO */
