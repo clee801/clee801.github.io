@@ -243,8 +243,8 @@ margin-top:6px;
 .photos{
 display:flex;
 justify-content:center;
-gap:40px;
-padding:40px 80px 80px 80px;
+gap:80px;
+padding:60px 100px 100px 100px;
 text-align:center;
 }
 
