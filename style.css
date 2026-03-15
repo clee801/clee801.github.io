@@ -750,14 +750,24 @@ nav li:hover > a{
 
 .about-story{
   position:relative;
-
   background:
     linear-gradient(rgba(255,246,224,0.72), rgba(255,246,224,0.72)),
     url("crochet-pattern.png");
   background-size:cover, 500px;
   background-repeat:no-repeat, repeat;
-
   padding:40px 40px 90px 40px;
+}
+
+.about-story::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:80px;
+  bottom:180px;
+  width:3px;
+  background:rgba(154,113,157,0.25);
+  transform:translateX(-50%);
+  z-index:0;
 }
 
 /* STORY TIMELINE */
@@ -771,9 +781,8 @@ nav li:hover > a{
   gap:55px;
   align-items:center;
   padding-top:20px;
+  z-index:1;
 }
-
-/* gold timeline dot */
 
 .story-block::before{
   content:"";
@@ -791,22 +800,6 @@ nav li:hover > a{
 
 /* purple connector line */
 
-.story-block::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:58px;
-  width:3px;
-  height:100%;
-  background:rgba(154,113,157,0.25);
-  transform:translateX(-50%);
-}
-
-/* stop line at last dot */
-
-.story-block:last-of-type::after{
-  display:none;
-}
 .story-block.reverse{
   grid-template-columns:0.9fr 1.1fr;
 }
