@@ -758,17 +758,6 @@ nav li:hover > a{
   padding:40px 40px 90px 40px;
 }
 
-.about-story::before{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:80px;
-  bottom:180px;
-  width:3px;
-  background:rgba(154,113,157,0.25);
-  transform:translateX(-50%);
-  z-index:0;
-}
 
 /* STORY TIMELINE */
 
