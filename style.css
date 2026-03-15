@@ -118,12 +118,14 @@ nav li:hover > a{
   justify-content:space-between;
   align-items:flex-start;
   padding:80px;
+  min-height:520px;
   background:
     linear-gradient(rgba(154,113,157,0.75), rgba(154,113,157,0.75)),
     url("crochet-pattern.png");
   background-size:cover, 600px;
   background-repeat:no-repeat, repeat;
 }
+
 
 .mission{
   width:40%;
@@ -150,6 +152,9 @@ nav li:hover > a{
 .headline{
   width:50%;
   text-align:right;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
 }
 
 .headline h2{
