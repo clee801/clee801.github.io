@@ -476,9 +476,9 @@ nav li:hover > a{
 
 .team-page{
   background:
-    linear-gradient(rgba(255,246,224,0.92), rgba(255,246,224,0.92)),
+    linear-gradient(rgba(255,246,224,0.75), rgba(255,246,224,0.75)),
     url("crochet-pattern.png");
-  background-size:cover, 600px;
+  background-size:cover, 450px;
   background-repeat:no-repeat, repeat;
   padding:70px 40px 90px 40px;
 }
