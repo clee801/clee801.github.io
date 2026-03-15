@@ -765,7 +765,7 @@ nav li:hover > a{
   position:absolute;
   left:50%;
   top:0;
-  bottom:0;
+  bottom:120px;   /* stops before Join Us section */
   width:3px;
   background:rgba(154,113,157,0.25);
   transform:translateX(-50%);
