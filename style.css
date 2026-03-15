@@ -533,9 +533,11 @@ nav li:hover > a{
 
 .team-name{
   color:#9a719d;
-  font-size:26px;
-  margin:0 0 16px 0;
+  font-size:32px;
+  margin:0 0 18px 0;
+  font-family:'Fraunces', serif;
 }
+
 
 /* IMAGE */
 
@@ -550,10 +552,10 @@ nav li:hover > a{
 /* ROLE */
 
 .team-role{
-  font-size:18px;
+  font-size:22px;
   color:#7f5b88;
   font-weight:600;
-  margin:6px 0 4px 0;
+  margin:8px 0 6px 0;
 }
 
 /* EXPERIENCE */
