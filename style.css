@@ -748,7 +748,7 @@ nav li:hover > a{
   background:
     linear-gradient(rgba(255,246,224,0.72), rgba(255,246,224,0.72)),
     url("crochet-pattern.png");
-  background-size:cover, 650px;
+  background-size:cover, 520px;
   background-repeat:no-repeat, repeat;
   padding:40px 40px 90px 40px;
 }
