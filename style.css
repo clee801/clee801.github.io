@@ -363,12 +363,20 @@ nav li:hover > a{
     box-sizing:border-box;
   }
 
-    .team-page{
+      .team-page{
     padding:50px 20px 70px 20px;
+  }
+
+  .team-heading{
+    margin-bottom:45px;
   }
 
   .team-heading h1{
     font-size:42px;
+  }
+
+  .team-heading p{
+    font-size:16px;
   }
 
   .team-grid{
@@ -376,8 +384,20 @@ nav li:hover > a{
     gap:28px;
   }
 
+  .team-card{
+    padding:24px;
+  }
+
+  .team-name{
+    font-size:28px;
+  }
+
   .team-card img{
-    height:300px;
+    height:340px;
+  }
+
+  .team-role{
+    font-size:20px;
   }
 }
 
