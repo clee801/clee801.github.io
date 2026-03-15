@@ -915,3 +915,18 @@ nav li:hover > a{
     transform:translateY(0);
   }
 }
+.story-timeline{
+  position:relative;
+}
+
+.story-timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:58px;
+  bottom:58px;
+  width:3px;
+  background:rgba(154,113,157,0.25);
+  transform:translateX(-50%);
+  z-index:0;
+}
