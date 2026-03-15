@@ -760,18 +760,14 @@ nav li:hover > a{
   padding:40px 40px 90px 40px;
 }
 
-.about-story::before{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:0;
-  bottom:120px;   /* stops before Join Us section */
-  width:3px;
-  background:rgba(154,113,157,0.25);
-  transform:translateX(-50%);
-  border-radius:2px;
+.story-block::before{
+  transition:all 0.25s ease;
 }
 
+.story-block:hover::before{
+  transform:translateX(-50%) scale(1.3);
+  box-shadow:0 0 10px rgba(255,197,96,0.8);
+}
 .story-block{
   position:relative;
   max-width:1250px;
