@@ -525,6 +525,12 @@ nav li:hover > a{
   border-radius:2px;
 }
 
+@keyframes dividerGrow{
+  to{
+    transform:scaleX(1);
+  }
+}
+
 .team-heading p{
   font-size:18px;
   color:#6f5871;
