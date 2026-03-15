@@ -709,11 +709,7 @@ nav li:hover > a{
 /* ABOUT PAGE */
 
 .about-hero{
-  background:
-    linear-gradient(rgba(255,246,224,0.88), rgba(255,246,224,0.88)),
-    url("crochet-pattern.png");
-  background-size:cover, 520px;
-  background-repeat:no-repeat, repeat;
+  background:#fff6e0;
   padding:95px 40px 70px 40px;
   text-align:center;
 }
