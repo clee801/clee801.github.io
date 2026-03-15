@@ -887,6 +887,15 @@ nav li:hover > a{
   animation:storyFade 0.9s ease forwards;
 }
 
+.story-block::before{
+  transition:all 0.25s ease;
+}
+
+.story-block:hover::before{
+  transform:translateX(-50%) scale(1.3);
+  box-shadow:0 0 10px rgba(255,197,96,0.8);
+}
+
 /* stagger the animations slightly */
 
 .story-block:nth-child(1){ animation-delay:0.1s; }
@@ -903,17 +912,4 @@ nav li:hover > a{
     opacity:1;
     transform:translateY(0);
   }
-}
-
-.timeline-year{
-  position:absolute;
-  left:50%;
-  transform:translate(-50%, -120%);
-  background:#9a719d;
-  color:white;
-  font-size:14px;
-  padding:4px 10px;
-  border-radius:20px;
-  font-weight:500;
-  letter-spacing:0.5px;
 }
