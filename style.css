@@ -474,30 +474,33 @@ nav li:hover > a{
 
 /* OUR TEAM PAGE */
 
+/* OUR TEAM PAGE */
+
 .team-page{
   background:
-    linear-gradient(rgba(255,246,224,0.75), rgba(255,246,224,0.75)),
+    linear-gradient(rgba(255,246,224,0.72), rgba(255,246,224,0.72)),
     url("crochet-pattern.png");
-  background-size:cover, 450px;
+  background-size:cover, 420px;
   background-repeat:no-repeat, repeat;
+  background-blend-mode:multiply;
   padding:70px 40px 90px 40px;
 }
 
 .team-heading{
   text-align:center;
-  margin-bottom:50px;
+  margin-bottom:65px;
 }
 
 .team-heading h1{
   font-size:56px;
   color:#9a719d;
-  margin-bottom:12px;
+  margin:0 0 12px 0;
 }
 
 .team-heading p{
   font-size:18px;
   color:#6f5871;
-  max-width:700px;
+  max-width:720px;
   margin:0 auto;
   line-height:1.7;
 }
@@ -506,15 +509,21 @@ nav li:hover > a{
   max-width:1400px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:50px;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:45px;
+  align-items:start;
 }
 
-/* TEAM CARDS */
-
 .team-card{
-  max-width:420px;
-  margin:0 auto;
+  background:rgba(255,255,255,0.42);
+  border:2px solid rgba(154,113,157,0.18);
+  border-radius:24px;
+  padding:30px;
+  text-align:left;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .team-card:hover{
@@ -522,41 +531,46 @@ nav li:hover > a{
   box-shadow:0 16px 30px rgba(0,0,0,0.12);
 }
 
-/* NAME */
-
 .team-name{
   color:#9a719d;
   font-size:32px;
+  line-height:1.2;
   margin:0 0 18px 0;
   font-family:'Fraunces', serif;
 }
 
-
-/* IMAGE */
-
 .team-card img{
   width:100%;
   height:420px;
+  object-fit:cover;
+  border-radius:18px;
+  margin-bottom:24px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  transition:transform 0.35s ease;
+}
 
-/* ROLE */
+.team-card:hover img{
+  transform:scale(1.03);
+}
 
 .team-role{
   font-size:22px;
   color:#7f5b88;
   font-weight:600;
-  margin:8px 0 6px 0;
+  line-height:1.35;
+  margin:0 0 8px 0;
 }
-
-/* EXPERIENCE */
 
 .team-experience{
-  font-size:14px;
+  font-size:15px;
   color:#6f5871;
+  line-height:1.6;
   margin:0;
 }
+
 .team-button-wrap{
   text-align:center;
-  margin-top:50px;
+  margin-top:55px;
 }
 
 .team-button{
@@ -565,9 +579,9 @@ nav li:hover > a{
   color:#fffdf8;
   text-decoration:none;
   font-weight:600;
+  font-size:17px;
   padding:16px 34px;
   border-radius:999px;
-  font-size:17px;
   box-shadow:0 10px 22px rgba(154,113,157,0.28);
   transition:transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
