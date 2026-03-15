@@ -214,6 +214,11 @@ nav li:hover > a{
   margin-top:6px;
 }
 
+
+
+
+
+
 /* PHOTOS */
 
 .photos{
@@ -296,6 +301,12 @@ nav li:hover > a{
   margin:auto;
   line-height:1.7;
 }
+
+
+
+
+
+
 
 /* MOBILE */
 
@@ -401,6 +412,10 @@ nav li:hover > a{
   }
 }
 
+
+
+
+
 /* FOOTER */
 
 .site-footer{
@@ -491,6 +506,10 @@ nav li:hover > a{
   font-size:14px;
   color:#f7ecd3;
 }
+
+
+
+
 
 /* OUR TEAM PAGE */
 .team-page{
@@ -624,4 +643,147 @@ nav li:hover > a{
   background:#86618a;
   transform:translateY(-3px);
   box-shadow:0 14px 28px rgba(154,113,157,0.34);
+}
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+.about-hero{
+  background:
+    linear-gradient(rgba(255,246,224,0.88), rgba(255,246,224,0.88)),
+    url("crochet-pattern.png");
+  background-size:cover, 520px;
+  background-repeat:no-repeat, repeat;
+  padding:95px 40px 70px 40px;
+  text-align:center;
+}
+
+.about-hero-content{
+  max-width:850px;
+  margin:0 auto;
+}
+
+.about-hero h1{
+  font-size:58px;
+  color:#9a719d;
+  margin:0 0 18px 0;
+  display:inline-block;
+  position:relative;
+}
+
+.about-hero h1::after{
+  content:"";
+  display:block;
+  width:78px;
+  height:4px;
+  background:#ffc560;
+  margin:14px auto 0 auto;
+  border-radius:2px;
+}
+
+.about-hero p{
+  font-size:18px;
+  line-height:1.8;
+  color:#6f5871;
+  margin:0 auto 14px auto;
+}
+
+.about-story{
+  background:#fff6e0;
+  padding:40px 40px 90px 40px;
+}
+
+.story-block{
+  max-width:1250px;
+  margin:0 auto 70px auto;
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:55px;
+  align-items:center;
+}
+
+.story-block.reverse{
+  grid-template-columns:0.9fr 1.1fr;
+}
+
+.story-block.reverse .story-text{
+  order:2;
+}
+
+.story-block.reverse .story-image{
+  order:1;
+}
+
+.story-text{
+  background:rgba(255,255,255,0.45);
+  border:2px solid rgba(154,113,157,0.15);
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}
+
+.story-text h2{
+  font-size:38px;
+  color:#9a719d;
+  margin:0 0 18px 0;
+  line-height:1.2;
+}
+
+.story-text p{
+  font-size:17px;
+  line-height:1.8;
+  color:#5d4c5f;
+  margin:0 0 16px 0;
+}
+
+.story-text p:last-child{
+  margin-bottom:0;
+}
+
+.story-image img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:24px;
+  box-shadow:0 12px 28px rgba(0,0,0,0.10);
+  transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.story-image img:hover{
+  transform:scale(1.02);
+  box-shadow:0 16px 32px rgba(0,0,0,0.14);
+}
+
+.about-closing{
+  max-width:900px;
+  margin:20px auto 0 auto;
+  text-align:center;
+  background:rgba(255,255,255,0.45);
+  border:2px solid rgba(154,113,157,0.15);
+  border-radius:26px;
+  padding:42px 34px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+}
+
+.about-closing h2{
+  font-size:42px;
+  color:#9a719d;
+  margin:0 0 18px 0;
+}
+
+.about-closing p{
+  font-size:18px;
+  line-height:1.8;
+  color:#5d4c5f;
+  margin:0 0 14px 0;
+}
+
+.about-closing p:last-child{
+  margin-bottom:0;
 }
