@@ -510,7 +510,19 @@ nav li:hover > a{
 .team-heading h1{
   font-size:56px;
   color:#9a719d;
-  margin:0 0 12px 0;
+  margin:0 0 14px 0;
+  position:relative;
+  display:inline-block;
+}
+
+.team-heading h1::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:4px;
+  background:#ffc560;
+  margin:14px auto 0 auto;
+  border-radius:2px;
 }
 
 .team-heading p{
