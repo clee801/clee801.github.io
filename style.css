@@ -511,13 +511,14 @@ nav li:hover > a{
   align-items:start;
 }
 
+/* TEAM CARDS */
+
 .team-card{
-  position:relative;
   background:rgba(255,255,255,0.45);
   border:2px solid rgba(154,113,157,0.18);
   border-radius:22px;
-  padding:30px 24px 30px 24px;
-  text-align:center;
+  padding:24px;
+  text-align:left;
   box-shadow:0 10px 24px rgba(0,0,0,0.08);
   backdrop-filter:blur(6px);
   transition:transform .25s ease, box-shadow .25s ease;
@@ -528,46 +529,39 @@ nav li:hover > a{
   box-shadow:0 16px 30px rgba(0,0,0,0.12);
 }
 
+/* NAME */
+
+.team-name{
+  color:#9a719d;
+  font-size:26px;
+  margin:0 0 16px 0;
+}
+
+/* IMAGE */
+
 .team-card img{
   width:100%;
   height:340px;
   object-fit:cover;
   border-radius:18px;
-  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  margin-bottom:18px;
 }
 
-/* NAME OVERLAY */
-
-.team-name-box{
-  position:absolute;
-  top:300px;
-  left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,197,96,0.85);
-  padding:10px 22px;
-  border-radius:14px;
-  box-shadow:0 6px 14px rgba(0,0,0,0.1);
-}
-
-.team-name-box h3{
-  margin:0;
-  color:#9a719d;
-  font-size:22px;
-}
-
-/* TEXT BELOW */
+/* ROLE */
 
 .team-role{
   font-size:18px;
   color:#7f5b88;
   font-weight:600;
-  margin-top:40px;
+  margin:6px 0 4px 0;
 }
+
+/* EXPERIENCE */
 
 .team-experience{
   font-size:14px;
   color:#6f5871;
-  margin:4px 0 0 0;
+  margin:0;
 }
 .team-button-wrap{
   text-align:center;
