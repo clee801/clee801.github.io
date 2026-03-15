@@ -878,3 +878,29 @@ nav li:hover > a{
 .about-closing p:last-child{
   margin-bottom:0;
 }
+
+/* STORY SCROLL ANIMATION */
+
+.story-block{
+  opacity:0;
+  transform:translateY(40px);
+  animation:storyFade 0.9s ease forwards;
+}
+
+/* stagger the animations slightly */
+
+.story-block:nth-child(1){ animation-delay:0.1s; }
+.story-block:nth-child(2){ animation-delay:0.25s; }
+.story-block:nth-child(3){ animation-delay:0.4s; }
+.story-block:nth-child(4){ animation-delay:0.55s; }
+.story-block:nth-child(5){ animation-delay:0.7s; }
+.story-block:nth-child(6){ animation-delay:0.85s; }
+.story-block:nth-child(7){ animation-delay:1s; }
+.story-block:nth-child(8){ animation-delay:1.15s; }
+
+@keyframes storyFade{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
