@@ -362,7 +362,23 @@ nav li:hover > a{
     width:100%;
     box-sizing:border-box;
   }
-  
+
+    .team-page{
+    padding:50px 20px 70px 20px;
+  }
+
+  .team-heading h1{
+    font-size:42px;
+  }
+
+  .team-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .team-card img{
+    height:300px;
+  }
 }
 
 /* FOOTER */
