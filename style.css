@@ -749,21 +749,52 @@ nav li:hover > a{
 }
 
 .about-story{
+  position:relative;
+
   background:
     linear-gradient(rgba(255,246,224,0.72), rgba(255,246,224,0.72)),
     url("crochet-pattern.png");
-  background-size:cover, 500px;
+  background-size:cover, 650px;
   background-repeat:no-repeat, repeat;
+
   padding:40px 40px 90px 40px;
 }
 
+.about-story::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:rgba(154,113,157,0.25);
+  transform:translateX(-50%);
+  border-radius:2px;
+}
+
 .story-block{
+  position:relative;
   max-width:1250px;
   margin:0 auto 70px auto;
   display:grid;
   grid-template-columns:1.1fr 0.9fr;
   gap:55px;
   align-items:center;
+  padding-top:20px;
+}
+
+.story-block::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:40px;
+  width:14px;
+  height:14px;
+  background:#ffc560;
+  border:4px solid #9a719d;
+  border-radius:50%;
+  transform:translateX(-50%);
+  z-index:5;
 }
 
 .story-block.reverse{
