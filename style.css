@@ -410,6 +410,62 @@ nav li:hover > a{
   .team-role{
     font-size:20px;
   }
+
+    .about-hero{
+    padding:70px 20px 50px 20px;
+  }
+
+  .about-hero h1{
+    font-size:44px;
+  }
+
+  .about-hero p{
+    font-size:16px;
+  }
+
+  .about-story{
+    padding:30px 20px 70px 20px;
+  }
+
+  .story-block,
+  .story-block.reverse{
+    grid-template-columns:1fr;
+    gap:24px;
+    margin-bottom:40px;
+  }
+
+  .story-block.reverse .story-text,
+  .story-block.reverse .story-image{
+    order:initial;
+  }
+
+  .story-text{
+    padding:24px;
+  }
+
+  .story-text h2{
+    font-size:30px;
+  }
+
+  .story-text p{
+    font-size:16px;
+  }
+
+  .story-image img{
+    height:280px;
+  }
+
+  .about-closing{
+    padding:30px 22px;
+  }
+
+  .about-closing h2{
+    font-size:34px;
+  }
+
+  .about-closing p{
+    font-size:16px;
+  }
 }
 
 
