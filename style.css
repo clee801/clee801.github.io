@@ -760,13 +760,52 @@ nav li:hover > a{
   padding:40px 40px 90px 40px;
 }
 
+/* STORY TIMELINE */
+
 .story-block{
+  position:relative;
   max-width:1250px;
   margin:0 auto 70px auto;
   display:grid;
   grid-template-columns:1.1fr 0.9fr;
   gap:55px;
   align-items:center;
+  padding-top:20px;
+}
+
+/* gold timeline dot */
+
+.story-block::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:40px;
+  width:14px;
+  height:14px;
+  background:#ffc560;
+  border:4px solid #9a719d;
+  border-radius:50%;
+  transform:translateX(-50%);
+  z-index:2;
+}
+
+/* purple connector line */
+
+.story-block::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:58px;
+  width:3px;
+  height:calc(100% + 52px);
+  background:rgba(154,113,157,0.25);
+  transform:translateX(-50%);
+}
+
+/* stop line at last dot */
+
+.story-block:last-of-type::after{
+  display:none;
 }
 .story-block.reverse{
   grid-template-columns:0.9fr 1.1fr;
@@ -779,7 +818,6 @@ nav li:hover > a{
 .story-block.reverse .story-image{
   order:1;
 }
-
 .story-text{
   background:rgba(255,255,255,0.45);
   border:2px solid rgba(154,113,157,0.15);
