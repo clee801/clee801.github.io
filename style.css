@@ -139,35 +139,30 @@ display:flex;
 justify-content:space-between;
 align-items:flex-start;
 padding:80px;
-
 background:
 linear-gradient(rgba(154,113,157,0.75), rgba(154,113,157,0.75)),
 url("crochet-pattern.png");
-
 background-size:cover, 600px;
 background-repeat:no-repeat, repeat;
 }
 
-/* Headline on the right */
 .headline{
 width:50%;
 text-align:right;
 }
 
 .headline h2{
-font-size:96px;
+font-family:'Clash Display', sans-serif;
+font-size:64px;
 color:#fde5b1;
 line-height:1.1;
-letter-spacing:1px;
 }
 
-/* Mission on the left */
 .mission{
 width:40%;
 background:rgba(255,213,120,0.35);
 padding:18px 35px 30px 35px;
 border-radius:18px;
-
 backdrop-filter:blur(6px);
 -webkit-backdrop-filter:blur(6px);
 }
@@ -182,7 +177,7 @@ font-size:32px;
 }
 
 .mission p{
-color:#333;
+color:#fff2cf;
 line-height:1.6;
 }
 /* headline on the right */
@@ -265,12 +260,17 @@ padding:0 60px;   /* keeps space on left/right edges */
 
 .photo-block{
 position:relative;
-background:white;
+background:#fff6e0;
 padding:20px;
 border-radius:16px;
 box-shadow:0 8px 20px rgba(0,0,0,0.08);
 transition:transform .25s ease, box-shadow .25s ease;
 overflow:hidden;
+}
+
+.photo-block:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
 
 .photo-block::after{
@@ -281,8 +281,9 @@ left:0;
 width:100%;
 height:100%;
 background:linear-gradient(
+to bottom,
 rgba(0,0,0,0) 40%,
-rgba(79,45,94,0.75)
+rgba(79,45,94,0.75) 100%
 );
 pointer-events:none;
 }
@@ -326,20 +327,6 @@ font-family:'Fraunces', serif;
 font-size:48px;
 color:#ffc560;
 margin-bottom:12px;
-}
-
-.photo-block{
-background:#fff6e0;
-padding:20px;
-border-radius:16px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-transition:transform .25s ease, box-shadow .25s ease;
-overflow:hidden;
-}
-
-.photo-block:hover{
-transform:translateY(-8px);
-box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
 
 .home-impact{
