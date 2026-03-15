@@ -249,6 +249,10 @@ nav li:hover > a{
   transition:transform 0.35s ease;
 }
 
+.photo-block:hover img{
+  transform:scale(1.05);
+}
+
 .photo-stat{
   font-family:'Fraunces', serif;
   font-size:48px;
