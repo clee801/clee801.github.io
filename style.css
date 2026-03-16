@@ -1893,12 +1893,9 @@ nav li:hover > a{
 }
 
 .support-main-section{
-  max-width:1300px;
+  max-width:900px;
   margin:0 auto 70px auto;
-  display:grid;
-  grid-template-columns:1.15fr 0.85fr;
-  gap:60px;
-  align-items:center;
+  display:block;
 }
 
 .support-left h2{
