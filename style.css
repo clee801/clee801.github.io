@@ -2149,6 +2149,11 @@ nav li:hover > a{
   align-items:center;
 }
 
+.support-left{
+  max-width:760px;
+  margin:0 auto;
+}
+
 .support-hero-left h1{
   font-size:60px;
   color:#fde5b1;
