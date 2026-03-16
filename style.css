@@ -791,6 +791,20 @@ nav li:hover > a{
 .donate-button{
   width:220px;
   text-align:center;
+  
+}
+
+  .support-hero-grid{
+  grid-template-columns:1fr;
+  gap:40px;
+}
+
+.support-hero-left h1{
+  font-size:44px;
+}
+
+.sponsor-box{
+  padding:30px 24px;
 }
 }
 
