@@ -685,6 +685,103 @@ nav li:hover > a{
   .network-list li{
     font-size:16px;
   }
+
+    .support-page{
+    padding:0 20px 70px 20px;
+  }
+
+  .support-hero{
+    padding:70px 0 36px 0;
+  }
+
+  .support-hero h1{
+    font-size:44px;
+  }
+
+  .support-hero p{
+    font-size:16px;
+  }
+
+  .support-main-section{
+    grid-template-columns:1fr;
+    gap:34px;
+    margin-bottom:50px;
+  }
+
+  .support-left h2{
+    font-size:32px;
+  }
+
+  .support-intro{
+    font-size:16px;
+  }
+
+  .support-info-card{
+    padding:24px;
+  }
+
+  .support-info-card h3{
+    font-size:28px;
+  }
+
+  .support-info-card p{
+    font-size:16px;
+  }
+
+  .support-cta-card{
+    padding:30px 24px;
+  }
+
+  .support-cta-card h2{
+    font-size:32px;
+  }
+
+  .support-cta-card p{
+    font-size:16px;
+  }
+
+  .support-main-button{
+    font-size:17px;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .support-section-heading h2{
+    font-size:36px;
+  }
+
+  .support-section-heading p{
+    font-size:16px;
+  }
+
+  .sponsor-grid,
+  .support-options-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sponsor-card{
+    padding:28px 22px;
+  }
+
+  .sponsor-card h3{
+    font-size:40px;
+  }
+
+  .sponsor-card p{
+    font-size:16px;
+  }
+
+  .support-option-card{
+    padding:24px;
+  }
+
+  .support-option-card h3{
+    font-size:24px;
+  }
+
+  .support-option-card p{
+    font-size:16px;
+  }
 }
 
 
