@@ -572,6 +572,101 @@ nav li:hover > a{
     width:100%;
     box-sizing:border-box;
   }
+
+    .volunteer-page{
+    padding:60px 20px 70px 20px;
+  }
+
+  .volunteer-section{
+    grid-template-columns:1fr;
+    gap:34px;
+    min-height:auto;
+  }
+
+  .volunteer-left h1{
+    font-size:42px;
+  }
+
+  .volunteer-intro{
+    font-size:16px;
+  }
+
+  .volunteer-info-card{
+    padding:24px;
+  }
+
+  .volunteer-info-card h2{
+    font-size:28px;
+  }
+
+  .volunteer-info-card p{
+    font-size:16px;
+  }
+
+  .volunteer-cta-card{
+    padding:30px 24px;
+  }
+
+  .volunteer-cta-card h2{
+    font-size:32px;
+  }
+
+  .volunteer-cta-card p{
+    font-size:16px;
+  }
+
+  .volunteer-button{
+    font-size:17px;
+    width:100%;
+    box-sizing:border-box;
+  }
+    .partner-page{
+    padding:60px 20px 70px 20px;
+  }
+
+  .partner-section{
+    grid-template-columns:1fr;
+    gap:34px;
+    min-height:auto;
+  }
+
+  .partner-left h1{
+    font-size:42px;
+  }
+
+  .partner-intro{
+    font-size:16px;
+  }
+
+  .partner-info-card{
+    padding:24px;
+  }
+
+  .partner-info-card h2{
+    font-size:28px;
+  }
+
+  .partner-info-card p{
+    font-size:16px;
+  }
+
+  .partner-cta-card{
+    padding:30px 24px;
+  }
+
+  .partner-cta-card h2{
+    font-size:32px;
+  }
+
+  .partner-cta-card p{
+    font-size:16px;
+  }
+
+  .partner-button{
+    font-size:17px;
+    width:100%;
+    box-sizing:border-box;
+  }
 }
 
 
