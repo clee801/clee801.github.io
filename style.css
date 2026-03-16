@@ -1903,6 +1903,7 @@ nav li:hover > a{
   line-height:1.15;
   margin:0 0 16px 0;
   color:#fde5b1;
+  text-align:center;
 }
 
 .support-divider{
@@ -1910,7 +1911,7 @@ nav li:hover > a{
   height:4px;
   background:#ffc560;
   border-radius:2px;
-  margin:0 0 28px 0;
+  margin:0 auto 28px auto;
 }
 
 .support-intro{
