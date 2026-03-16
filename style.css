@@ -1737,3 +1737,251 @@ nav li:hover > a{
   border-bottom:none;
   padding-bottom:0;
 }
+
+/* SUPPORT PAGE */
+
+.support-page{
+  background:
+    linear-gradient(rgba(154,113,157,0.78), rgba(154,113,157,0.78)),
+    url("crochet-pattern.png");
+  background-size:cover, 500px;
+  background-repeat:no-repeat, repeat;
+  padding:0 40px 100px 40px;
+}
+
+.support-hero{
+  padding:95px 0 50px 0;
+  text-align:center;
+}
+
+.support-hero-content{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.support-hero h1{
+  font-size:60px;
+  color:#fde5b1;
+  margin:0 0 18px 0;
+  display:inline-block;
+  position:relative;
+}
+
+.support-hero h1::after{
+  content:"";
+  display:block;
+  width:78px;
+  height:4px;
+  background:#ffc560;
+  margin:14px auto 0 auto;
+  border-radius:2px;
+}
+
+.support-hero p{
+  font-size:19px;
+  line-height:1.9;
+  color:#fff4d8;
+  margin:0 auto;
+  max-width:780px;
+}
+
+.support-main-section{
+  max-width:1300px;
+  margin:0 auto 70px auto;
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.support-left h2{
+  font-size:42px;
+  line-height:1.15;
+  margin:0 0 16px 0;
+  color:#fde5b1;
+}
+
+.support-divider{
+  width:90px;
+  height:4px;
+  background:#ffc560;
+  border-radius:2px;
+  margin:0 0 28px 0;
+}
+
+.support-intro{
+  font-size:18px;
+  line-height:1.9;
+  color:#fff4d8;
+  max-width:720px;
+  margin:0 0 30px 0;
+}
+
+.support-info-card{
+  background:rgba(255,255,255,0.12);
+  border:2px solid rgba(255,197,96,0.25);
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.10);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  max-width:760px;
+}
+
+.support-info-card h3{
+  margin:0 0 16px 0;
+  font-size:32px;
+  color:#fde5b1;
+}
+
+.support-info-card p{
+  margin:0 0 16px 0;
+  font-size:17px;
+  line-height:1.8;
+  color:#fff7e8;
+}
+
+.support-info-card p:last-child{
+  margin-bottom:0;
+}
+
+.support-right{
+  display:flex;
+  justify-content:center;
+}
+
+.support-cta-card{
+  width:100%;
+  max-width:430px;
+  background:rgba(255,246,224,0.18);
+  border:2px solid rgba(255,197,96,0.28);
+  border-radius:28px;
+  padding:42px 34px;
+  text-align:center;
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.support-cta-card h2{
+  font-size:40px;
+  color:#fde5b1;
+  margin:0 0 16px 0;
+}
+
+.support-cta-card p{
+  font-size:17px;
+  line-height:1.8;
+  color:#fff8ea;
+  margin:0 0 24px 0;
+}
+
+.support-main-button{
+  display:inline-block;
+  text-decoration:none;
+  background:#ffc560;
+  color:#4f2d5e;
+  font-weight:700;
+  font-size:18px;
+  padding:16px 30px;
+  border-radius:999px;
+  box-shadow:0 10px 22px rgba(0,0,0,0.14);
+  transition:transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  margin:10px 0 22px 0;
+}
+
+.support-main-button:hover{
+  background:#ffb347;
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.16);
+}
+
+.support-note{
+  font-size:15px;
+  color:#fff1cf;
+  margin:0;
+}
+
+.support-sponsor-section,
+.support-other-ways{
+  max-width:1300px;
+  margin:0 auto 70px auto;
+}
+
+.support-section-heading{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 34px auto;
+}
+
+.support-section-heading h2{
+  font-size:46px;
+  color:#fde5b1;
+  margin:0 0 14px 0;
+}
+
+.support-section-heading p{
+  margin:0;
+  font-size:18px;
+  line-height:1.8;
+  color:#fff4d8;
+}
+
+.sponsor-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:28px;
+}
+
+.sponsor-card{
+  background:rgba(255,246,224,0.18);
+  border:2px solid rgba(255,197,96,0.25);
+  border-radius:24px;
+  padding:34px 26px;
+  text-align:center;
+  box-shadow:0 10px 24px rgba(0,0,0,0.10);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+
+.sponsor-card h3{
+  margin:0 0 12px 0;
+  font-size:48px;
+  color:#ffc560;
+}
+
+.sponsor-card p{
+  margin:0;
+  font-size:17px;
+  line-height:1.7;
+  color:#fff8ea;
+}
+
+.support-options-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:28px;
+}
+
+.support-option-card{
+  background:rgba(255,255,255,0.12);
+  border:2px solid rgba(255,197,96,0.22);
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.10);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+
+.support-option-card h3{
+  margin:0 0 14px 0;
+  font-size:28px;
+  color:#fde5b1;
+}
+
+.support-option-card p{
+  margin:0;
+  font-size:16px;
+  line-height:1.8;
+  color:#fff7e8;
+}
