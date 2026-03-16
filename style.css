@@ -1121,3 +1121,136 @@ nav li:hover > a{
   transform:scale(1.02);
   box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
+
+/* START A CHAPTER PAGE */
+
+.chapter-page{
+  background:
+    linear-gradient(rgba(154,113,157,0.78), rgba(154,113,157,0.78)),
+    url("crochet-pattern.png");
+  background-size:cover, 500px;
+  background-repeat:no-repeat, repeat;
+  padding:90px 40px 100px 40px;
+}
+
+.chapter-section{
+  max-width:1300px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:60px;
+  align-items:center;
+  min-height:70vh;
+}
+
+.chapter-left{
+  color:#fff8ea;
+}
+
+.chapter-left h1{
+  font-size:60px;
+  line-height:1.08;
+  margin:0 0 18px 0;
+  color:#fde5b1;
+}
+
+.chapter-divider{
+  width:90px;
+  height:4px;
+  background:#ffc560;
+  border-radius:2px;
+  margin:0 0 28px 0;
+}
+
+.chapter-intro{
+  font-size:19px;
+  line-height:1.9;
+  color:#fff4d8;
+  max-width:700px;
+  margin:0 0 30px 0;
+}
+
+.chapter-info-card{
+  background:rgba(255,255,255,0.12);
+  border:2px solid rgba(255,197,96,0.25);
+  border-radius:24px;
+  padding:32px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.10);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  max-width:760px;
+}
+
+.chapter-info-card h2{
+  margin:0 0 16px 0;
+  font-size:34px;
+  color:#fde5b1;
+}
+
+.chapter-info-card p{
+  margin:0 0 16px 0;
+  font-size:17px;
+  line-height:1.8;
+  color:#fff7e8;
+}
+
+.chapter-info-card p:last-child{
+  margin-bottom:0;
+}
+
+.chapter-right{
+  display:flex;
+  justify-content:center;
+}
+
+.chapter-cta-card{
+  width:100%;
+  max-width:430px;
+  background:rgba(255,246,224,0.18);
+  border:2px solid rgba(255,197,96,0.28);
+  border-radius:28px;
+  padding:42px 34px;
+  text-align:center;
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.chapter-cta-card h2{
+  font-size:40px;
+  color:#fde5b1;
+  margin:0 0 16px 0;
+}
+
+.chapter-cta-card p{
+  font-size:17px;
+  line-height:1.8;
+  color:#fff8ea;
+  margin:0 0 24px 0;
+}
+
+.chapter-button{
+  display:inline-block;
+  text-decoration:none;
+  background:#ffc560;
+  color:#4f2d5e;
+  font-weight:700;
+  font-size:18px;
+  padding:16px 30px;
+  border-radius:999px;
+  box-shadow:0 10px 22px rgba(0,0,0,0.14);
+  transition:transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  margin:10px 0 24px 0;
+}
+
+.chapter-button:hover{
+  background:#ffb347;
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.16);
+}
+
+.chapter-note{
+  font-size:15px;
+  color:#fff1cf;
+  margin:0;
+}
