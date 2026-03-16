@@ -2217,3 +2217,57 @@ nav li:hover > a{
   color:#fff8ea;
   line-height:1.6;
 }
+
+/* PLUSHIE TAG STYLE */
+
+.sponsor-card{
+  position:relative;
+  background:rgba(255,255,255,0.14);
+  border:2px solid rgba(255,197,96,0.35);
+  border-radius:20px;
+  padding:30px 20px 26px 20px;
+  text-align:center;
+  box-shadow:0 10px 22px rgba(0,0,0,0.12);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sponsor-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 26px rgba(0,0,0,0.16);
+}
+
+.sponsor-card h3{
+  margin:0 0 8px 0;
+  font-size:38px;
+  color:#ffc560;
+}
+
+.sponsor-card p{
+  margin:0 0 10px 0;
+  font-size:15px;
+  color:#fff8ea;
+  line-height:1.6;
+}
+
+/* TAG HOLE */
+
+.tag-hole{
+  position:absolute;
+  top:-8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:16px;
+  height:16px;
+  background:#9a719d;
+  border:3px solid #ffc560;
+  border-radius:50%;
+}
+
+/* PLUSH ICON */
+
+.tag-icon{
+  font-size:20px;
+  opacity:0.9;
+}
