@@ -508,6 +508,28 @@ nav li:hover > a{
   .photo-block img{
     height:260px;
   }
+
+  .home-gallery,
+.how-it-works{
+  padding:0 20px 70px 20px;
+}
+
+.section-heading h2{
+  font-size:36px;
+}
+
+.section-heading p{
+  font-size:16px;
+}
+
+.gallery-grid,
+.steps-grid{
+  grid-template-columns:1fr;
+}
+
+.gallery-card img{
+  height:260px;
+}
   .footer-content{
     grid-template-columns:1fr;
     gap:28px;
