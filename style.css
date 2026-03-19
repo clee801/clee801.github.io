@@ -117,10 +117,10 @@ nav li:hover > a{
 
 .hero{
   display:grid;
-  grid-template-columns:1fr 1fr;   /* ← change this */
-  gap:48px;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
   align-items:center;
-  padding:70px 80px 55px 80px;
+  padding:70px 80px 30px 80px;
   background:
     linear-gradient(rgba(154,113,157,0.75), rgba(154,113,157,0.75)),
     url("crochet-pattern.png");
@@ -152,12 +152,17 @@ nav li:hover > a{
 
 .mission{
   width:100%;
+  max-width:460px;
   background:rgba(255,213,120,0.22);
   padding:24px 30px 28px 30px;
   border-radius:22px;
-  backdrop-filter:blur(6px);
-  -webkit-backdrop-filter:blur(6px);
-  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+  border:1.5px solid rgba(255,255,255,0.18);
+  margin-left:-25px;
+  transform:translateY(35px);
+  position:relative;
 }
 
 .mission h3{
