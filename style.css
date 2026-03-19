@@ -188,11 +188,10 @@ nav li:hover > a{
   overflow:hidden;
 }
 
-.hero-divider svg,
-.footer-wave svg{
+.hero-divider svg{
   display:block;
   width:100%;
-  height:100px;
+  height:130px;
 }
 
 .hero-divider path{
