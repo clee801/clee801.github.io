@@ -367,9 +367,10 @@ nav li:hover > a{
   }
 
   .hero{
-  grid-template-columns:1fr;
-  gap:28px;
-  padding:50px 25px;
+  flex-direction:column;
+  gap:30px;
+  padding:60px 25px;
+  background-position:center;
 }
 
 .hero-text,
