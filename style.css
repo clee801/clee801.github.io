@@ -568,16 +568,34 @@ nav li:hover > a{
   transform:none;
 }
 
-  .stats,
-  .photos{
-    grid-template-columns:1fr;
-    padding:0 20px;
-  }
+  .photo-collage{
+  grid-template-columns:1fr;
+  padding:0 20px;
+  gap:20px;
+}
 
-  .photo-block img{
-    height:260px;
-  }
+.collage-right{
+  grid-template-columns:1fr;
+  grid-template-rows:auto;
+  gap:20px;
+}
 
+.collage-large img{
+  min-height:300px;
+}
+
+.collage-top img,
+.collage-bottom img{
+  min-height:200px;
+}
+
+.collage-heading h2{
+  font-size:36px;
+}
+
+.collage-heading p{
+  font-size:16px;
+}
   .home-gallery,
 .how-it-works{
   padding:0 20px 70px 20px;
