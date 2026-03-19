@@ -347,20 +347,27 @@ nav li:hover > a{
   }
 
   .hero{
-    flex-direction:column;
-    gap:30px;
-    padding:50px 25px;
-  }
+  grid-template-columns:1fr;
+  gap:28px;
+  padding:50px 25px;
+}
 
-  .mission,
-  .headline{
-    width:100%;
-    text-align:left;
-  }
+.hero-text,
+.mission{
+  width:100%;
+}
 
-  .headline h2{
-    font-size:42px;
-  }
+.hero-text h1{
+  font-size:38px;
+}
+
+.hero-tagline{
+  font-size:20px;
+}
+
+.mission{
+  text-align:left;
+}
 
   .stats,
   .photos{
