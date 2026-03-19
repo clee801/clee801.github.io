@@ -403,6 +403,50 @@ nav li:hover > a{
 }
 
 
+/* HOW IT WORKS */
+
+.how-it-works{
+  background:#fff6e0;
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 60px 90px 60px;
+}
+
+.steps-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:28px;
+}
+
+.step-card{
+  background:rgba(255,255,255,0.62);
+  border:2px solid rgba(154,113,157,0.14);
+  border-radius:24px;
+  padding:30px 26px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+  text-align:left;
+}
+
+.step-number{
+  font-family:'Clash Display', sans-serif;
+  font-size:34px;
+  color:#ffc560;
+  margin-bottom:12px;
+}
+
+.step-card h3{
+  font-size:28px;
+  color:#9a719d;
+  margin:0 0 14px 0;
+}
+
+.step-card p{
+  margin:0;
+  font-size:16px;
+  line-height:1.8;
+  color:#5d4c5f;
+}
+
 /* MOBILE */
 
 @media screen and (max-width:768px){
