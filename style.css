@@ -423,35 +423,58 @@ nav li:hover > a{
   padding:0 60px 90px 60px;
 }
 
-.steps-grid{
+.process-wrap{
+  position:relative;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   gap:28px;
-}
-
-.step-card{
-  background:rgba(255,255,255,0.62);
-  border:2px solid rgba(154,113,157,0.14);
-  border-radius:24px;
-  padding:30px 26px;
+  background:rgba(255,255,255,0.52);
+  border:2px solid rgba(154,113,157,0.12);
+  border-radius:28px;
+  padding:34px 28px;
   box-shadow:0 10px 24px rgba(0,0,0,0.06);
-  text-align:left;
 }
 
-.step-number{
+.process-wrap::before{
+  content:"";
+  position:absolute;
+  top:62px;
+  left:10%;
+  width:80%;
+  height:3px;
+  background:rgba(154,113,157,0.18);
+  z-index:0;
+}
+
+.process-step{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding:0 10px;
+}
+
+.process-number{
+  width:64px;
+  height:64px;
+  margin:0 auto 18px auto;
+  border-radius:50%;
+  background:#9a719d;
+  color:#fde5b1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   font-family:'Clash Display', sans-serif;
-  font-size:34px;
-  color:#ffc560;
-  margin-bottom:12px;
+  font-size:24px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.10);
 }
 
-.step-card h3{
+.process-text h3{
   font-size:28px;
   color:#9a719d;
-  margin:0 0 14px 0;
+  margin:0 0 12px 0;
 }
 
-.step-card p{
+.process-text p{
   margin:0;
   font-size:16px;
   line-height:1.8;
