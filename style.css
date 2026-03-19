@@ -20,7 +20,7 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 40px;
+  padding:28px 40px;
   background:#9a719d;
   border-bottom:4px solid #ffc560;
 }
@@ -119,12 +119,13 @@ nav li:hover > a{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:60px 80px 45px 80px;
+  padding:90px 80px 90px 80px;
   background:
-    linear-gradient(rgba(154,113,157,0.75), rgba(154,113,157,0.75)),
-    url("crochet-pattern.png");
-  background-size:cover, 600px;
-  background-repeat:no-repeat, repeat;
+    linear-gradient(rgba(154,113,157,0.58), rgba(154,113,157,0.58)),
+    url("plushies-hero.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 .hero-text{
   max-width:760px;
