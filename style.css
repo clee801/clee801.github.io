@@ -133,13 +133,13 @@ nav li:hover > a{
 }
 
 .hero-text h1{
-  font-family:'Clash Display', sans-serif;
-  font-size:44px;
-  line-height:1.22;
+  font-family:'Poppins', sans-serif;   /* ← key change */
+  font-size:34px;
+  line-height:1.5;
   color:#fff4d8;
   margin:0 0 20px 0;
-  max-width:650px;
-  letter-spacing:0.2px;
+  max-width:620px;
+  font-weight:500;
 }
 
 .hero-tagline{
