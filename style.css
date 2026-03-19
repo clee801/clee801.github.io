@@ -316,7 +316,29 @@ nav li:hover > a{
 }
 
 
+/* IMPACT TAGLINE */
 
+.impact-tagline{
+  text-align:center;
+  margin:40px 0 10px 0;
+}
+
+.impact-tagline h2{
+  font-family:'Clash Display', sans-serif;
+  font-size:42px;
+  color:#9a719d;
+  margin:0;
+}
+
+.impact-tagline h2::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:4px;
+  background:#ffc560;
+  margin:14px auto 0 auto;
+  border-radius:2px;
+}
 
 
 
