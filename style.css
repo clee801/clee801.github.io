@@ -556,13 +556,39 @@ nav li:hover > a{
   font-size:16px;
 }
 
-.gallery-grid,
-.steps-grid{
+.gallery-collage{
   grid-template-columns:1fr;
 }
 
-.gallery-card img{
-  height:260px;
+.gallery-large img{
+  min-height:320px;
+}
+
+.gallery-side{
+  grid-template-columns:1fr;
+  grid-template-rows:auto;
+}
+
+.gallery-small img{
+  height:220px;
+}
+
+.process-wrap{
+  grid-template-columns:1fr;
+  gap:28px;
+  padding:28px 22px;
+}
+
+.process-wrap::before{
+  display:none;
+}
+
+.process-step{
+  text-align:left;
+}
+
+.process-number{
+  margin:0 0 14px 0;
 }
   .footer-content{
     grid-template-columns:1fr;
