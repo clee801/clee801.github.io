@@ -114,7 +114,6 @@ nav li:hover > a{
 
 /* HERO SECTION */
 
-/* HERO SECTION */
 
 .hero{
   display:grid;
@@ -135,10 +134,12 @@ nav li:hover > a{
 
 .hero-text h1{
   font-family:'Clash Display', sans-serif;
-  font-size:56px;
-  line-height:1.08;
-  color:#fde5b1;
-  margin:0 0 18px 0;
+  font-size:44px;
+  line-height:1.22;
+  color:#fff4d8;
+  margin:0 0 20px 0;
+  max-width:650px;
+  letter-spacing:0.2px;
 }
 
 .hero-tagline{
