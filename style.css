@@ -460,7 +460,36 @@ nav li:hover > a{
   .photo-masonry{
     column-count:1;
   }
-}
+  .how-it-works{
+    padding:0 20px 70px 20px;
+  }
+
+  .section-heading h2{
+    font-size:36px;
+  }
+
+  .section-heading p{
+    font-size:16px;
+  }
+
+  .process-wrap{
+    grid-template-columns:1fr;
+    gap:28px;
+    padding:28px 22px;
+  }
+
+  .process-wrap::before{
+    display:none;
+  }
+
+  .process-step{
+    text-align:left;
+  }
+
+  .process-number{
+    margin:0 0 14px 0;
+  }
+
   .home-gallery,
 
   .how-it-works{
