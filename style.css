@@ -252,19 +252,7 @@ nav li:hover > a{
 .photo-masonry img:hover{
   transform:scale(1.03);
 }
-/* hover effect */
 
-.collage-large img,
-.collage-top img,
-.collage-bottom img{
-  transition:transform 0.35s ease;
-}
-
-.collage-large:hover img,
-.collage-top:hover img,
-.collage-bottom:hover img{
-  transform:scale(1.04);
-}
 
 
 /* PAGE HERO */
@@ -315,82 +303,6 @@ nav li:hover > a{
   border-radius:2px;
 }
 
-/* HOME GALLERY */
-
-.home-gallery{
-  background:#fff6e0;
-  max-width:1400px;
-  margin:0 auto;
-  padding:10px 60px 90px 60px;
-}
-
-.section-heading{
-  text-align:center;
-  max-width:760px;
-  margin:0 auto 36px auto;
-}
-
-.section-heading h2{
-  font-size:44px;
-  color:#9a719d;
-  margin:0 0 14px 0;
-}
-
-.section-heading h2::after{
-  content:"";
-  display:block;
-  width:70px;
-  height:4px;
-  background:#ffc560;
-  margin:14px auto 0 auto;
-  border-radius:2px;
-}
-
-.section-heading p{
-  margin:0;
-  font-size:18px;
-  line-height:1.8;
-  color:#5d4c5f;
-}
-
-.gallery-collage{
-  display:grid;
-  grid-template-columns:1.35fr 0.85fr;
-  gap:24px;
-  align-items:stretch;
-}
-
-.gallery-large,
-.gallery-small{
-  background:rgba(255,255,255,0.58);
-  padding:16px;
-  border-radius:24px;
-  box-shadow:0 10px 24px rgba(0,0,0,0.08);
-  overflow:hidden;
-}
-
-.gallery-large img{
-  width:100%;
-  height:100%;
-  min-height:520px;
-  object-fit:cover;
-  border-radius:18px;
-  display:block;
-}
-
-.gallery-side{
-  display:grid;
-  grid-template-rows:1fr 1fr;
-  gap:24px;
-}
-
-.gallery-small img{
-  width:100%;
-  height:248px;
-  object-fit:cover;
-  border-radius:18px;
-  display:block;
-}
 
 /* HOW IT WORKS */
 
