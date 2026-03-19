@@ -328,7 +328,7 @@ nav li:hover > a{
 .process-wrap::before{
   content:"";
   position:absolute;
-  top:62px;
+  top:66px;
   left:10%;
   width:80%;
   height:3px;
