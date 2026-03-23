@@ -1142,10 +1142,11 @@ nav li:hover > a{
 }
 
 .team-button-wrap{
-  text-align:center;
+  width:100%;
+  display:flex;
+  justify-content:center;
   margin-top:60px;
 }
-
 .team-button{
   display:inline-block;
   background:#9a719d;
