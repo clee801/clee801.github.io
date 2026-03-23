@@ -1108,8 +1108,9 @@ nav li:hover > a{
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(122, 77, 135, 0.34);
-  mix-blend-mode:multiply;
+  background:#9a719d;
+  mix-blend-mode:soft-light;
+  opacity:0.6;
   pointer-events:none;
 }
 
