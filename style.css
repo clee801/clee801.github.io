@@ -1123,14 +1123,12 @@ nav li:hover > a{
 }
 
 .team-name{
-  display:inline-block;
-  margin:0 0 10px 0;
-  font-size:30px;
-  line-height:1.2;
+  margin:0 0 6px 0;
+  font-size:34px;
+  line-height:1.15;
   color:#7f5b88;
   font-family:'Fraunces', serif;
-  background:linear-gradient(transparent 58%, rgba(255,197,96,0.55) 58%);
-  padding:0 6px 2px 4px;
+  font-weight:600;
 }
 
 .team-role{
@@ -1139,6 +1137,7 @@ nav li:hover > a{
   font-weight:500;
   line-height:1.45;
   margin:0;
+  opacity:0.9;
 }
 
 .team-button-wrap{
