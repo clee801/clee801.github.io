@@ -1132,10 +1132,14 @@ nav li:hover > a{
 }
 
 .team-button-wrap{
-  max-width:1380px;   /* match .team-grid */
-  margin:60px auto 0 auto;
   display:flex;
   justify-content:center;
+  margin-top:60px;
+}
+
+.team-container{
+  max-width:1380px;
+  margin:0 auto;
 }
 .team-button{
   display:inline-block;
