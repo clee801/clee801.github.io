@@ -1522,6 +1522,8 @@ nav li:hover > a{
 /* START A CHAPTER PAGE */
 
 
+/* START A CHAPTER PAGE */
+
 .chapter-page{
   background:
     linear-gradient(rgba(154,113,157,0.78), rgba(154,113,157,0.78)),
@@ -1529,23 +1531,20 @@ nav li:hover > a{
   background-size:cover, 500px;
   background-repeat:no-repeat, repeat;
   padding:90px 40px 100px 40px;
-  text-align:center;
 }
 
 .chapter-section{
   max-width:1300px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:1fr;
-  gap:50px;
-  min-height:auto;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  min-height:70vh;
 }
 
 .chapter-left{
   color:#fff8ea;
-  max-width:800px;
-  margin:0 auto;
-  text-align:center;
 }
 
 .chapter-left h1{
@@ -1560,7 +1559,7 @@ nav li:hover > a{
   height:4px;
   background:#ffc560;
   border-radius:2px;
-  margin:0 auto 28px auto;
+  margin:0 0 28px 0;
 }
 
 .chapter-intro{
@@ -1568,7 +1567,7 @@ nav li:hover > a{
   line-height:1.9;
   color:#fff4d8;
   max-width:700px;
-  margin:0 auto 30px auto;
+  margin:0 0 30px 0;
 }
 
 .chapter-info-card{
@@ -1580,9 +1579,7 @@ nav li:hover > a{
   backdrop-filter:blur(6px);
   -webkit-backdrop-filter:blur(6px);
   max-width:760px;
-  margin:0 auto;
 }
-
 
 .chapter-info-card h2{
   margin:0 0 16px 0;
@@ -1602,13 +1599,11 @@ nav li:hover > a{
 }
 
 .chapter-right{
-  width:100%;
   display:flex;
   justify-content:center;
 }
 
 .chapter-cta-card{
-  margin:0 auto;
   width:100%;
   max-width:430px;
   background:rgba(255,246,224,0.18);
@@ -1690,7 +1685,6 @@ nav li:hover > a{
   background:#ffe3a3;
   transform:translateY(-2px);
 }
-
 /* VOLUNTEER PAGE */
 
 .volunteer-page{
