@@ -1521,6 +1521,7 @@ nav li:hover > a{
 
 /* START A CHAPTER PAGE */
 
+
 .chapter-page{
   background:
     linear-gradient(rgba(154,113,157,0.78), rgba(154,113,157,0.78)),
@@ -1528,6 +1529,7 @@ nav li:hover > a{
   background-size:cover, 500px;
   background-repeat:no-repeat, repeat;
   padding:90px 40px 100px 40px;
+  text-align:center;
 }
 
 .chapter-section{
@@ -1600,6 +1602,7 @@ nav li:hover > a{
 }
 
 .chapter-right{
+  width:100%;
   display:flex;
   justify-content:center;
 }
