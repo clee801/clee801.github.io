@@ -2396,7 +2396,7 @@ nav li:hover > a{
 
 .member-profile{
   max-width:1200px;
-  margin:0 auto;
+  margin:0 auto 70px auto;
   display:grid;
   grid-template-columns:0.95fr 1.05fr;
   gap:55px;
@@ -2440,7 +2440,7 @@ nav li:hover > a{
 .member-role{
   font-size:24px;
   color:#5d4c5f;
-  margin:0 0 26px 0;
+  margin:0 0 24px 0;
   font-weight:500;
 }
 
@@ -2461,9 +2461,9 @@ nav li:hover > a{
 
 .member-facts{
   display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
+  grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:18px;
-  margin:34px 0 34px 0;
+  margin:34px 0 10px 0;
 }
 
 .member-fact{
@@ -2487,11 +2487,65 @@ nav li:hover > a{
   font-size:15px;
 }
 
+.member-gallery-section{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.member-gallery-heading{
+  text-align:center;
+  margin-bottom:34px;
+}
+
+.member-gallery-heading h2{
+  font-size:42px;
+  color:#9a719d;
+  margin:0 0 12px 0;
+}
+
+.member-gallery-heading h2::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:4px;
+  background:#ffc560;
+  margin:14px auto 0 auto;
+  border-radius:2px;
+}
+
+.member-gallery-heading p{
+  margin:0;
+  font-size:17px;
+  line-height:1.8;
+  color:#5d4c5f;
+}
+
+.member-gallery{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+
+.member-gallery img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:16px;
+  display:block;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-gallery img:hover{
+  transform:scale(1.02);
+  box-shadow:0 14px 28px rgba(0,0,0,0.12);
+}
+
 .member-buttons{
   display:flex;
   gap:16px;
   flex-wrap:wrap;
-  margin-top:10px;
+  margin-top:36px;
 }
 
 .member-button,
@@ -2535,6 +2589,7 @@ nav li:hover > a{
   .member-profile{
     grid-template-columns:1fr;
     gap:30px;
+    margin-bottom:55px;
   }
 
   .member-image img{
@@ -2555,5 +2610,21 @@ nav li:hover > a{
 
   .member-facts{
     grid-template-columns:1fr;
+  }
+
+  .member-gallery{
+    grid-template-columns:1fr;
+  }
+
+  .member-gallery img{
+    height:260px;
+  }
+
+  .member-gallery-heading h2{
+    font-size:34px;
+  }
+
+  .member-gallery-heading p{
+    font-size:16px;
   }
 }
