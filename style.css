@@ -2627,4 +2627,19 @@ nav li:hover > a{
   .member-gallery-heading p{
     font-size:16px;
   }
+
+  .member-detail{
+  font-size:20px;
+  color:#6a566b;
+  margin:18px 0 30px 0;
+  line-height:1.7;
+  letter-spacing:0.2px;
+}
+
+.member-highlight{
+  color:#7f5b88;
+  font-weight:700;
+  font-family:'Fraunces', serif;
+  font-size:22px;
+}
 }
