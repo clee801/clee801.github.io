@@ -651,52 +651,52 @@ nav li:hover > a{
   }
 
   .chapter-page{
-    padding:60px 20px 70px 20px;
-  }
+  padding:60px 20px 70px 20px;
+}
 
-  .chapter-section{
-    grid-template-columns:1fr;
-    gap:50px;
-    min-height:auto;
-  }
+.chapter-section{
+  grid-template-columns:1fr;
+  gap:34px;
+  min-height:auto;
+}
 
-  .chapter-left h1{
-    font-size:42px;
-  }
+.chapter-left h1{
+  font-size:42px;
+}
 
-  .chapter-intro{
-    font-size:16px;
-  }
+.chapter-intro{
+  font-size:16px;
+}
 
-  .chapter-info-card{
-    padding:24px;
-  }
+.chapter-info-card{
+  padding:24px;
+}
 
-  .chapter-info-card h2{
-    font-size:28px;
-  }
+.chapter-info-card h2{
+  font-size:28px;
+}
 
-  .chapter-info-card p{
-    font-size:16px;
-  }
+.chapter-info-card p{
+  font-size:16px;
+}
 
-  .chapter-cta-card{
-    padding:30px 24px;
-  }
+.chapter-cta-card{
+  padding:30px 24px;
+}
 
-  .chapter-cta-card h2{
-    font-size:32px;
-  }
+.chapter-cta-card h2{
+  font-size:32px;
+}
 
-  .chapter-cta-card p{
-    font-size:16px;
-  }
+.chapter-cta-card p{
+  font-size:16px;
+}
 
-  .chapter-button{
-    font-size:17px;
-    width:100%;
-    box-sizing:border-box;
-  }
+.chapter-button{
+  font-size:17px;
+  width:100%;
+  box-sizing:border-box;
+}
 
   .volunteer-page{
     padding:60px 20px 70px 20px;
