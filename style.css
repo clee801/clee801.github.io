@@ -1601,6 +1601,7 @@ nav li:hover > a{
 }
 
 .chapter-cta-card{
+  margin:0 auto;
   width:100%;
   max-width:430px;
   background:rgba(255,246,224,0.18);
