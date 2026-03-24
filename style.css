@@ -2382,3 +2382,178 @@ nav li:hover > a{
   line-height:1.6;
 }
 
+
+/* BOARD MEMBER PAGES */
+
+.member-page{
+  background:
+    linear-gradient(rgba(255,246,224,0.76), rgba(255,246,224,0.76)),
+    url("crochet-pattern.png");
+  background-size:cover, 500px;
+  background-repeat:no-repeat, repeat;
+  padding:90px 40px 100px 40px;
+}
+
+.member-profile{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:0.95fr 1.05fr;
+  gap:55px;
+  align-items:start;
+}
+
+.member-image img{
+  width:100%;
+  height:560px;
+  object-fit:cover;
+  border-radius:16px;
+  display:block;
+  box-shadow:0 14px 30px rgba(0,0,0,0.10);
+}
+
+.member-content{
+  padding-top:10px;
+}
+
+.member-label{
+  display:inline-block;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:#9a719d;
+  background:rgba(154,113,157,0.10);
+  border:1px solid rgba(154,113,157,0.16);
+  border-radius:999px;
+  padding:8px 14px;
+  margin-bottom:18px;
+}
+
+.member-content h1{
+  font-size:56px;
+  line-height:1.05;
+  color:#7f5b88;
+  margin:0 0 12px 0;
+}
+
+.member-role{
+  font-size:24px;
+  color:#5d4c5f;
+  margin:0 0 26px 0;
+  font-weight:500;
+}
+
+.member-divider{
+  width:90px;
+  height:4px;
+  background:#ffc560;
+  border-radius:2px;
+  margin:0 0 28px 0;
+}
+
+.member-bio{
+  font-size:17px;
+  line-height:1.9;
+  color:#5d4c5f;
+  margin:0 0 18px 0;
+}
+
+.member-facts{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:18px;
+  margin:34px 0 34px 0;
+}
+
+.member-fact{
+  background:rgba(255,255,255,0.55);
+  border:2px solid rgba(154,113,157,0.12);
+  border-radius:20px;
+  padding:20px 22px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+.member-fact h3{
+  font-size:16px;
+  color:#9a719d;
+  margin:0 0 8px 0;
+}
+
+.member-fact p{
+  margin:0;
+  color:#5d4c5f;
+  line-height:1.6;
+  font-size:15px;
+}
+
+.member-buttons{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.member-button,
+.member-button-secondary{
+  display:inline-block;
+  text-decoration:none;
+  font-weight:600;
+  font-size:16px;
+  padding:14px 24px;
+  border-radius:999px;
+  transition:all 0.25s ease;
+}
+
+.member-button{
+  background:#9a719d;
+  color:#fffdf8;
+  box-shadow:0 10px 22px rgba(154,113,157,0.25);
+}
+
+.member-button:hover{
+  background:#86618a;
+  transform:translateY(-2px);
+}
+
+.member-button-secondary{
+  background:#fff4d8;
+  color:#6f5871;
+  border:1px solid rgba(154,113,157,0.14);
+}
+
+.member-button-secondary:hover{
+  background:#ffe8b3;
+  transform:translateY(-2px);
+}
+
+@media screen and (max-width:768px){
+  .member-page{
+    padding:60px 20px 70px 20px;
+  }
+
+  .member-profile{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .member-image img{
+    height:420px;
+  }
+
+  .member-content h1{
+    font-size:42px;
+  }
+
+  .member-role{
+    font-size:20px;
+  }
+
+  .member-bio{
+    font-size:16px;
+  }
+
+  .member-facts{
+    grid-template-columns:1fr;
+  }
+}
