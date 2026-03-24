@@ -656,7 +656,7 @@ nav li:hover > a{
 
   .chapter-section{
     grid-template-columns:1fr;
-    gap:34px;
+    gap:50px;
     min-height:auto;
   }
 
