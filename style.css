@@ -1,18 +1,15 @@
 /* GLOBAL */
-html{
+html,
+body{
   margin:0;
   padding:0;
   width:100%;
+  max-width:100%;
   overflow-x:hidden;
   background:#FFFBF2;
 }
 
 body{
-  margin:0;
-  padding:0;
-  min-width:100%;
-  overflow-x:hidden;
-  background:#FFFBF2;
   font-family:'Poppins', sans-serif;
   color:#333;
 }
@@ -23,13 +20,12 @@ body{
   box-sizing:border-box;
 }
 
-
-
-body{
-  margin:0;
-  background:#FFFBF2;
-  font-family:'Poppins', sans-serif;
-  color:#333;
+img,
+svg,
+video{
+  max-width:100%;
+  height:auto;
+  display:block;
 }
 
 /* HEADINGS */
