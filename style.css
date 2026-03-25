@@ -1,32 +1,28 @@
 /* GLOBAL */
-html, body{
+html{
+  margin:0;
+  padding:0;
   width:100%;
-  max-width:100%;
   overflow-x:hidden;
+  background:#FFFBF2;
 }
 
-*{
+body{
+  margin:0;
+  padding:0;
+  min-width:100%;
+  overflow-x:hidden;
+  background:#FFFBF2;
+  font-family:'Poppins', sans-serif;
+  color:#333;
+}
+
+*,
+*::before,
+*::after{
   box-sizing:border-box;
 }
 
-header,
-.hero,
-.hero-divider,
-.home-impact,
-.member-page,
-.team-page,
-.about-hero,
-.about-story,
-.projects-hero,
-.projects-page,
-.chapter-page,
-.volunteer-page,
-.partner-page,
-.support-page,
-.footer-wave,
-.site-footer{
-  width:100%;
-}
 
 
 body{
