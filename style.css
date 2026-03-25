@@ -3203,3 +3203,29 @@ nav li:hover > a{
     background:rgba(255,255,255,0.14) !important;
   }
 }
+@media screen and (max-width:768px){
+
+  .story-block,
+  .story-block.reverse{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+  }
+
+  .story-text{
+    width:100% !important;
+    padding:20px !important;
+  }
+
+  .story-image{
+    width:100% !important;
+  }
+
+  .story-image img{
+    width:100% !important;
+    height:auto !important;
+    max-height:360px;
+    object-fit:cover;
+  }
+
+}
