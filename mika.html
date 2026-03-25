@@ -143,6 +143,18 @@
     <p>© 2026 From Hooks to Hope</p>
   </div>
 </footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('header nav');
 
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+</script>
 </body>
 </html>
