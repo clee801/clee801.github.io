@@ -3033,3 +3033,25 @@ nav li:hover > a{
   }
 
 }
+
+  @media screen and (max-width:768px){
+  .hero{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    justify-content:flex-start !important;
+    gap:24px !important;
+    padding:40px 20px 44px 20px !important;
+  }
+
+  .hero-text,
+  .mission{
+    width:100% !important;
+    max-width:none !important;
+    flex:none !important;
+  }
+
+  .mission{
+    margin-top:0 !important;
+  }
+}
