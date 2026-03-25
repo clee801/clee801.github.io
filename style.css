@@ -448,14 +448,7 @@ nav li:hover > a{
     overflow-x:hidden;
   }
 
- section,
-div,
-main,
-header,
-footer,
-nav{
-  max-width:100%;
-}
+ 
 
 .stats,
 .photo-masonry,
