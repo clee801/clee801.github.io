@@ -2963,3 +2963,59 @@ nav li:hover > a{
   transform:translateY(-2px);
 }
 
+/* FINAL MOBILE OVERRIDE FIX */
+
+@media screen and (max-width:768px){
+
+  /* FORCE ALL GRID LAYOUTS TO STACK */
+
+  .support-hero-grid,
+  .chapter-section,
+  .volunteer-section,
+  .partner-section,
+  .team-grid,
+  .network-section,
+  .footer-content,
+  .member-profile{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  /* FIX STORY + PROJECT TIMELINE */
+  .story-block,
+  .story-block.reverse,
+  .project-entry{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  /* REMOVE TIMELINE LINES */
+  .projects-timeline::before,
+  .story-block::before{
+    display:none !important;
+  }
+
+  /* FIX WIDTH OVERFLOW */
+  *{
+    max-width:100%;
+  }
+
+  /* FIX TEXT OVERFLOW */
+  h1, h2, h3, p{
+    word-wrap:break-word;
+  }
+
+  /* TEAM CARDS FIX */
+  .team-grid{
+    align-items:center;
+  }
+
+  .team-card{
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+}
+
