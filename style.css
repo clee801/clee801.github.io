@@ -1,4 +1,33 @@
 /* GLOBAL */
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+header,
+.hero,
+.hero-divider,
+.home-impact,
+.member-page,
+.team-page,
+.about-hero,
+.about-story,
+.projects-hero,
+.projects-page,
+.chapter-page,
+.volunteer-page,
+.partner-page,
+.support-page,
+.footer-wave,
+.site-footer{
+  width:100%;
+}
+
 
 body{
   margin:0;
@@ -401,14 +430,11 @@ nav li:hover > a{
 
 /* MOBILE */
 
-/* MOBILE */
-
 @media screen and (max-width:768px){
   body{
     overflow-x:hidden;
   }
-
-  /* HEADER + NAV */
+  
 
  /* HEADER + NAV */
 
