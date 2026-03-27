@@ -3109,3 +3109,40 @@ nav li:hover > a{
   }
 
 }
+
+@media screen and (max-width:768px){
+
+  .project-gallery,
+  .member-gallery{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    gap:14px !important;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:6px;
+  }
+
+  .project-gallery::-webkit-scrollbar,
+  .member-gallery::-webkit-scrollbar{
+    height:8px;
+  }
+
+  .project-gallery::-webkit-scrollbar-thumb,
+  .member-gallery::-webkit-scrollbar-thumb{
+    background:rgba(154,113,157,0.35);
+    border-radius:999px;
+  }
+
+  .project-gallery img,
+  .member-gallery img{
+    flex:0 0 85% !important;
+    width:85% !important;
+    max-width:none !important;
+    height:240px !important;
+    object-fit:cover !important;
+    border-radius:16px;
+    scroll-snap-align:start;
+  }
+
+}
