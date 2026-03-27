@@ -1911,7 +1911,21 @@ nav li:hover > a{
   box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
 
-/* START A CHAPTER PAGE */
+
+.projects-page{
+  max-width:1200px;   /* wider overall page */
+  margin:0 auto;
+  padding:40px 40px 80px 40px;
+}
+
+.project-entry{
+  grid-template-columns:140px 1fr; /* smaller year column */
+  gap:30px;
+}
+
+.project-card{
+  max-width:100%;   /* allow full width */
+}
 
 
 /* START A CHAPTER PAGE */
