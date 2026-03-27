@@ -3091,3 +3091,21 @@ nav li:hover > a{
   }
 
 }
+
+@media screen and (max-width:768px){
+
+  .member-gallery{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:16px !important;
+  }
+
+  .member-gallery img{
+    width:100% !important;
+    height:auto !important;
+    max-height:260px;
+    object-fit:cover;
+    border-radius:16px;
+  }
+
+}
