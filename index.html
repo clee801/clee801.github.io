@@ -299,17 +299,68 @@ stroke-linecap="round" stroke-linejoin="round">
 
 </footer>
   <script>
+  // NAV TOGGLE
   const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('header nav');
+  const siteNav = document.querySelector('.site-nav');
+  const dropdowns = document.querySelectorAll('.dropdown');
 
-  if (menuToggle && nav) {
+  if (menuToggle && siteNav) {
     menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-
+      siteNav.classList.toggle('nav-open');
       const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
       menuToggle.setAttribute('aria-expanded', String(!expanded));
     });
   }
+
+  // DROPDOWNS
+  dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+
+    if (!toggle) return;
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const isOpen = dropdown.classList.contains('open');
+
+      dropdowns.forEach((item) => {
+        item.classList.remove('open');
+        const btn = item.querySelector('.dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        dropdown.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    dropdowns.forEach((dropdown) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        const btn = dropdown.querySelector('.dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // SCROLL REVEAL
+  const revealItems = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.14
+  });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
 </script>
 </body>
 
