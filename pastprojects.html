@@ -1,223 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZLM5SKXDRL');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZLM5SKXDRL');
+  </script>
 
   <link rel="icon" type="image/png" href="/favicon1.png">
-
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>From Hooks to Hope - Past Projects</title>
+  <title>From Hooks to Hope - Past Projects</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
 
-<!-- Clash Display (for headings) -->
-<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css?v=19">
+  <link rel="stylesheet" href="style.css?v=20">
 </head>
 
 <body>
 
-  <!-- HEADER / NAV -->
-  <header>
-  <div class="logo">
-    <a href="index.html"><img src="logoHeader.png" alt="From Hooks to Hope Logo"></a>
-  </div>
-
-  <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-
-      <li class="dropdown">
-        <a href="#">About</a>
-        <ul class="dropdown-content">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="ourteam.html">Our Team</a></li>
-          <li><a href="pastprojects.html">Past Projects</a></li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="#">Get Involved</a>
-        <ul class="dropdown-content">
-          <li><a href="startchapter.html">Start a Chapter</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="partner.html">Partner</a></li>
-        </ul>
-      </li>
-
-      <li class="support-button"><a href="support.html">Donate</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <!-- MAIN CONTENT -->
-  <main>
-
-<section class="projects-hero">
-  <div class="projects-hero-content">
-    <h1>Past Projects</h1>
-    <p>
-      Each drive represents the time, creativity, and care our volunteers
-      put into creating handmade plush toys for pediatric patients.
-      As our organization grows, every donation drive will be documented here.
-    </p>
-  </div>
-</section>
-
-
-<section class="projects-page">
-
-  <div class="projects-timeline">
-
-    <!-- WINTER WONDERLAND DRIVE -->
-
-    <div class="project-entry">
-
-      <div class="project-year">
-        2025
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="logo">
+        <a href="index.html" aria-label="From Hooks to Hope home">
+          <img src="logoHeader.png" alt="From Hooks to Hope Logo">
+        </a>
       </div>
 
-      <div class="project-card">
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <h2>Winter Wonderland Drive</h2>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
 
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              About <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="pastprojects.html">Past Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              Get Involved <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="startchapter.html">Start a Chapter</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="partner.html">Partner</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-donate" href="support.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="projects-hero reveal">
+      <div class="projects-hero-content">
+        <h1>Past Projects</h1>
         <p>
-          Our first official donation drive focused on creating winter-themed
-          plush toys for pediatric hospital patients. Members of the club spent
-          weeks crocheting handmade animals that were donated to
-          Lurie Children’s Hospital of Chicago.
+          Each drive represents the time, creativity, and care our volunteers
+          put into creating handmade plush toys for pediatric patients.
+          As our organization grows, every donation drive will be documented here.
         </p>
+      </div>
+    </section>
 
-        <div class="project-gallery">
+    <section class="projects-page">
+      <div class="projects-timeline">
 
-          <img src="winterdrive1.jpg" alt="Crocheted plush toys from the Winter Wonderland Drive">
-          <img src="winterdrive2.jpg" alt="Members crocheting during the Winter Wonderland Drive">
-          <img src="winterdrive3.jpg" alt="Completed plush toys for the hospital donation">
-          <img src="arctic-fox.jpg" alt="Plush fox prepared for delivery">
+        <div class="project-entry reveal">
+          <div class="project-year">
+            2025
+          </div>
 
+          <div class="project-card">
+            <h2>Winter Wonderland Drive</h2>
+
+            <p>
+              Our first official donation drive focused on creating winter-themed
+              plush toys for pediatric hospital patients. Members of the club spent
+              weeks crocheting handmade animals that were donated to
+              Lurie Children’s Hospital of Chicago.
+            </p>
+
+            <div class="project-gallery">
+              <img src="winterdrive1.jpg" alt="Crocheted plush toys from the Winter Wonderland Drive">
+              <img src="winterdrive2.jpg" alt="Members crocheting during the Winter Wonderland Drive">
+              <img src="winterdrive3.jpg" alt="Completed plush toys for the hospital donation">
+              <img src="arctic-fox.jpg" alt="Plush fox prepared for delivery">
+            </div>
+          </div>
         </div>
 
+      </div>
+    </section>
+
+  </main>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <h3>From Hooks to Hope</h3>
+        <p>
+          Handmade comfort for pediatric patients through compassion,
+          creativity, and community.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+          </span>
+          fromhookstohope@gmail.com
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="https://instagram.com/fromhookstohope"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </span>
+          @fromhookstohope
+        </a>
       </div>
 
     </div>
 
-  </div>
+    <div class="footer-bottom">
+      <p>© 2026 From Hooks to Hope</p>
+    </div>
+  </footer>
 
-</section>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-</main>
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('nav-open');
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
 
-  <!-- FOOTER -->
-  <div class="footer-wave">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
-  </svg>
-</div>
-<footer class="site-footer">
+    dropdowns.forEach((dropdown) => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
 
-<div class="footer-content">
+      if (!toggle) return;
 
-<div class="footer-brand">
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
 
+        const isOpen = dropdown.classList.contains('open');
 
-<h3>From Hooks to Hope</h3>
+        dropdowns.forEach((item) => {
+          item.classList.remove('open');
+          const btn = item.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
 
-<p>
-Handmade comfort for pediatric patients through compassion,
-creativity, and community.
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<h4>Contact</h4>
-
-<a href="mailto:fromhookstohope@gmail.com" class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<path d="M4 6h16v12H4z"></path>
-<path d="M22 6l-10 7L2 6"></path>
-
-</svg>
-
-</span>
-
-fromhookstohope@gmail.com
-
-</a>
-
-</div>
-
-<div class="footer-links">
-
-<h4>Follow Us</h4>
-
-<a href="https://instagram.com/fromhookstohope"
-target="_blank"
-rel="noopener noreferrer"
-class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
-<circle cx="12" cy="12" r="4.2"></circle>
-<circle cx="17.5" cy="6.5" r="1"></circle>
-
-</svg>
-
-</span>
-
-@fromhookstohope
-
-</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>© 2026 From Hooks to Hope</p>
-</div>
-
-</footer>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-
-  if (menuToggle && nav) {
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!expanded));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
     });
-  }
-</script>
+
+    document.addEventListener('click', (e) => {
+      dropdowns.forEach((dropdown) => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach((dropdown) => {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        if (siteNav) siteNav.classList.remove('nav-open');
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.14
+    });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+  </script>
+
 </body>
 </html>
