@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,18 +11,13 @@
   </script>
 
   <link rel="icon" type="image/png" href="/favicon1.png">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>From Hooks to Hope - Home</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Clash Display -->
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=20">
 </head>
 
 <body>
@@ -74,7 +68,6 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-text reveal reveal-left">
       <h1>
@@ -100,9 +93,7 @@
     </svg>
   </div>
 
-  <!-- HOME IMPACT -->
   <div class="home-impact">
-
     <div class="impact-tagline reveal">
       <h2>Stitching Compassion Into Every Loop</h2>
     </div>
@@ -124,7 +115,6 @@
       </div>
     </section>
 
-    <!-- COLLAGE -->
     <section class="photo-masonry reveal">
       <img src="members.jpg" alt="From Hooks to Hope members together">
       <img src="winterdrive3.jpg" alt="Winter donation drive">
@@ -139,7 +129,6 @@
       <img src="homepage8.jpg" alt="From Hooks to Hope community photo">
     </section>
 
-    <!-- HOW IT WORKS -->
     <section class="how-it-works reveal">
       <div class="section-heading">
         <h2>How It Works</h2>
@@ -175,10 +164,8 @@
         </div>
       </div>
     </section>
-
   </div>
 
-  <!-- NETWORK -->
   <section class="network-section">
     <div class="network-column reveal reveal-delay-1">
       <h2>Hospital Partners</h2>
@@ -204,7 +191,6 @@
 
   <footer class="site-footer">
     <div class="footer-content">
-
       <div class="footer-brand">
         <h3>From Hooks to Hope</h3>
         <p>
@@ -244,7 +230,6 @@
           @fromhookstohope
         </a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
@@ -253,7 +238,6 @@
   </footer>
 
   <script>
-    // NAV TOGGLE
     const menuToggle = document.querySelector('.menu-toggle');
     const siteNav = document.querySelector('.site-nav');
     const dropdowns = document.querySelectorAll('.dropdown');
@@ -266,7 +250,6 @@
       });
     }
 
-    // DROPDOWNS
     dropdowns.forEach((dropdown) => {
       const toggle = dropdown.querySelector('.dropdown-toggle');
 
@@ -274,7 +257,6 @@
 
       toggle.addEventListener('click', (e) => {
         e.stopPropagation();
-
         const isOpen = dropdown.classList.contains('open');
 
         dropdowns.forEach((item) => {
@@ -313,7 +295,6 @@
       }
     });
 
-    // SCROLL REVEAL
     const revealItems = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
