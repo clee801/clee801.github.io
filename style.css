@@ -35,42 +35,167 @@ h1,h2,h3{
   font-weight:600;
 }
 
-/* HEADER */
+/* HEADER / NAVBAR */
 
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:28px 40px;
-  background:#9a719d;
-  border-bottom:4px solid #ffc560;
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:2000;
+  background:rgba(154,113,157,0.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,0.14);
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
 }
 
-
-
-/* LOGO */
+.nav-shell{
+  max-width:1280px;
+  margin:0 auto;
+  padding:14px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
 
 .logo img{
-  height:120px;
+  height:82px;
+  width:auto;
+  display:block;
 }
 
-/* NAVIGATION */
+.site-nav{
+  display:flex;
+  align-items:center;
+}
 
-
-nav ul{
+.nav-list{
   list-style:none;
   display:flex;
-  gap:25px;
   align-items:center;
+  gap:12px;
   margin:0;
   padding:0;
 }
 
+.nav-list > li{
+  position:relative;
+}
+
+.site-nav a,
+.dropdown-toggle{
+  appearance:none;
+  border:none;
+  background:none;
+  text-decoration:none;
+  color:#fffdf8;
+  font-family:'Poppins', sans-serif;
+  font-size:16px;
+  font-weight:600;
+  line-height:1;
+  padding:14px 16px;
+  border-radius:999px;
+  cursor:pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.site-nav a:hover,
+.dropdown-toggle:hover{
+  background:rgba(255,255,255,0.12);
+  transform:translateY(-1px);
+}
+
+.site-nav a:focus-visible,
+.dropdown-toggle:focus-visible,
+.menu-toggle:focus-visible{
+  outline:3px solid rgba(255,197,96,0.9);
+  outline-offset:3px;
+}
+
+.dropdown-toggle{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.caret{
+  font-size:14px;
+  transition:transform 0.25s ease;
+}
+
+.dropdown.open .caret{
+  transform:rotate(180deg);
+}
+
+.nav-donate{
+  background:#ffc560 !important;
+  color:#4f2d5e !important;
+  padding:14px 22px !important;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.nav-donate:hover{
+  background:#ffb347 !important;
+  transform:translateY(-2px);
+  box-shadow:0 12px 22px rgba(0,0,0,0.16);
+}
+
+.dropdown-content{
+  list-style:none;
+  margin:10px 0 0 0;
+  padding:10px;
+  min-width:220px;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:rgba(255,251,242,0.98);
+  border:1px solid rgba(154,113,157,0.12);
+  border-radius:18px;
+  box-shadow:0 18px 34px rgba(0,0,0,0.10);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(8px);
+  transition:
+    opacity 0.22s ease,
+    visibility 0.22s ease,
+    transform 0.22s ease;
+  z-index:1000;
+}
+
+.dropdown-content li{
+  margin:0;
+}
+
+.dropdown-content a{
+  display:block;
+  color:#7a5a80;
+  border-radius:12px;
+  padding:12px 14px;
+}
+
+.dropdown-content a:hover{
+  background:rgba(154,113,157,0.08);
+  color:#5c4062;
+  transform:none;
+}
+
+.dropdown.open .dropdown-content{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* MENU TOGGLE */
 
 .menu-toggle{
-  display:none; /* hide on desktop */
+  display:none;
   background:none;
   border:none;
+  padding:8px;
   cursor:pointer;
 }
 
@@ -78,81 +203,96 @@ nav ul{
   display:block;
   width:28px;
   height:3px;
-  background:#fffdf8;
-  margin:6px 0;
+  margin:5px 0;
   border-radius:999px;
+  background:#fffdf8;
+  transition:transform 0.25s ease, opacity 0.25s ease;
 }
 
-nav li a{
-  text-decoration:none;
-  color:white;
-  font-weight:600;
-  font-size:18px;
-  padding:16px 26px;
-  border-radius:30px;
-  transition:all 0.25s ease;
-  background:rgba(255,255,255,0);
+/* MOBILE NAV */
+
+@media screen and (max-width:768px){
+  .nav-shell{
+    padding:12px 16px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:12px;
+  }
+
+  .logo img{
+    height:72px;
+  }
+
+  .menu-toggle{
+    display:block;
+    justify-self:end;
+  }
+
+  .site-nav{
+    grid-column:1 / -1;
+    display:none;
+    width:100%;
+  }
+
+  .site-nav.nav-open{
+    display:block;
+  }
+
+  .nav-list{
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+    padding-top:10px;
+  }
+
+  .nav-list > li{
+    width:100%;
+  }
+
+  .site-nav a,
+  .dropdown-toggle{
+    width:100%;
+    text-align:left;
+    justify-content:space-between;
+    padding:14px 16px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.08);
+  }
+
+  .dropdown-content{
+    position:static;
+    min-width:100%;
+    margin-top:8px;
+    padding:8px;
+    border-radius:16px;
+    box-shadow:none;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.10);
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    display:none;
+  }
+
+  .dropdown.open .dropdown-content{
+    display:block;
+  }
+
+  .dropdown-content a{
+    color:#fffdf8;
+    background:rgba(255,255,255,0.06);
+  }
+
+  .dropdown-content a:hover{
+    background:rgba(255,255,255,0.14);
+    color:#fffdf8;
+  }
+
+  .nav-donate{
+    text-align:center !important;
+  }
 }
-
-nav li:hover > a{
-  background:rgba(255,255,255,0.25);
-  transform:scale(1.08);
-}
-
-/* SUPPORT BUTTON */
-
-.support-button a{
-  background:#ffc560;
-  color:#333;
-  font-weight:600;
-  padding:12px 20px;
-  border-radius:30px;
-  transition:all 0.25s ease;
-}
-
-.support-button a:hover{
-  background:#ffb347;
-}
-
-/* DROPDOWNS */
-
-.dropdown{
-  position:relative;
-}
-
-.dropdown-content{
-  display:none;
-  position:absolute;
-  top:110%;
-  left:0;
-  background:#ffffff;
-  padding:10px 0;
-  min-width:140px;
-  border-radius:12px;
-  border:2px solid #e5d4f2;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  z-index:1000;
-}
-
-.dropdown-content li a{
-  display:block;
-  padding:10px 16px;
-  color:#9a719d;
-  text-decoration:none;
-  border-radius:12px;
-  background:rgba(154,113,157,0.05);
-  transition:all 0.2s ease;
-}
-
-.dropdown-content li a:hover{
-  background:rgba(154,113,157,0.15);
-  transform:scale(1.05);
-}
-
-.dropdown:hover .dropdown-content{
-  display:block;
-}
-
 /* HERO SECTION */
 
 
