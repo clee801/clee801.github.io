@@ -1,218 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZLM5SKXDRL');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZLM5SKXDRL');
+  </script>
 
   <link rel="icon" type="image/png" href="/favicon1.png">
 
-  
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>From Hooks to Hope - Partner</title>
+  <title>From Hooks to Hope - Partner</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
 
-<!-- Clash Display (for headings) -->
-<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=20">
 </head>
 
-  <!-- HEADER / NAV -->
-  <header>
-  <div class="logo">
-    <a href="index.html"><img src="logoHeader.png" alt="From Hooks to Hope Logo"></a>
+<body>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="logo">
+        <a href="index.html" aria-label="From Hooks to Hope home">
+          <img src="logoHeader.png" alt="From Hooks to Hope Logo">
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              About <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="pastprojects.html">Past Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              Get Involved <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="startchapter.html">Start a Chapter</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="partner.html">Partner</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-donate" href="support.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="partner-page">
+    <section class="partner-section">
+
+      <div class="partner-left reveal reveal-left">
+        <h1>Interested in partnering with us?</h1>
+        <div class="partner-divider"></div>
+
+        <p class="partner-intro">
+          We work with hospitals to donate handmade plush toys and other crocheted
+          items that bring comfort to pediatric patients. Through each partnership,
+          we hope to create small moments of joy, warmth, and reassurance for children
+          during difficult hospital experiences.
+        </p>
+
+        <div class="partner-info-card reveal reveal-delay-1">
+          <h2>What does a partnership look like?</h2>
+          <p>
+            Partner hospitals can request donations for pediatric patients and connect
+            with our organization about future drives, delivery logistics, and the types
+            of handmade items that would be most helpful for their patients.
+          </p>
+          <p>
+            As From Hooks to Hope grows, we aim to build lasting hospital partnerships
+            that allow us to serve more children and respond thoughtfully to the needs
+            of each community we work with.
+          </p>
+        </div>
+      </div>
+
+      <div class="partner-right reveal reveal-right">
+        <div class="partner-cta-card">
+          <h2>Request a Partnership</h2>
+          <p>
+            Fill out our partnership interest form to tell us more about your hospital,
+            patient population, and how we may be able to support your community.
+          </p>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSetGy1hd4Q-IK5HYods6o1i8EohRG5tOJ9Nh3ADUSMVxDNMKQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="partner-button">
+            Complete Partnership Form
+          </a>
+
+          <p class="partner-note">
+            We are grateful for every opportunity to bring handmade comfort to children through hospital partnerships.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
+    </svg>
   </div>
 
-  <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+  <footer class="site-footer">
+    <div class="footer-content">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-
-      <li class="dropdown">
-        <a href="#">About</a>
-        <ul class="dropdown-content">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="ourteam.html">Our Team</a></li>
-          <li><a href="pastprojects.html">Past Projects</a></li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="#">Get Involved</a>
-        <ul class="dropdown-content">
-          <li><a href="startchapter.html">Start a Chapter</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="partner.html">Partner</a></li>
-        </ul>
-      </li>
-
-      <li class="support-button"><a href="support.html">Donate</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <!-- MAIN CONTENT -->
-  <main class="partner-page">
-
-  <section class="partner-section">
-
-    <div class="partner-left">
-      <h1>Interested in partnering with us?</h1>
-      <div class="partner-divider"></div>
-
-      <p class="partner-intro">
-        We work with hospitals to donate handmade plush toys and other crocheted
-        items that bring comfort to pediatric patients. Through each partnership,
-        we hope to create small moments of joy, warmth, and reassurance for children
-        during difficult hospital experiences.
-      </p>
-
-      <div class="partner-info-card">
-        <h2>What does a partnership look like?</h2>
+      <div class="footer-brand">
+        <h3>From Hooks to Hope</h3>
         <p>
-          Partner hospitals can request donations for pediatric patients and connect
-          with our organization about future drives, delivery logistics, and the types
-          of handmade items that would be most helpful for their patients.
-        </p>
-        <p>
-          As From Hooks to Hope grows, we aim to build lasting hospital partnerships
-          that allow us to serve more children and respond thoughtfully to the needs
-          of each community we work with.
+          Handmade comfort for pediatric patients through compassion,
+          creativity, and community.
         </p>
       </div>
-    </div>
 
-    <div class="partner-right">
-      <div class="partner-cta-card">
-        <h2>Request a partnership</h2>
-        <p>
-          Fill out our partnership interest form to tell us more about your hospital,
-          patient population, and how we may be able to support your community.
-        </p>
-
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSetGy1hd4Q-IK5HYods6o1i8EohRG5tOJ9Nh3ADUSMVxDNMKQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="partner-button">
-          Open Partnership Form
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+          </span>
+          fromhookstohope@gmail.com
         </a>
-
-        <p class="partner-note">
-          We are grateful for every opportunity to bring handmade comfort to children through hospital partnerships.
-        </p>
       </div>
+
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="https://instagram.com/fromhookstohope"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </span>
+          @fromhookstohope
+        </a>
+      </div>
+
     </div>
 
-  </section>
+    <div class="footer-bottom">
+      <p>© 2026 From Hooks to Hope</p>
+    </div>
+  </footer>
 
-</main>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-  <!-- FOOTER -->
-<div class="footer-wave">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
-  </svg>
-</div>
-<footer class="site-footer">
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('nav-open');
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
 
-<div class="footer-content">
+    dropdowns.forEach((dropdown) => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
 
-<div class="footer-brand">
+      if (!toggle) return;
 
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
 
-<h3>From Hooks to Hope</h3>
+        const isOpen = dropdown.classList.contains('open');
 
-<p>
-Handmade comfort for pediatric patients through compassion,
-creativity, and community.
-</p>
+        dropdowns.forEach((item) => {
+          item.classList.remove('open');
+          const btn = item.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
 
-</div>
-
-<div class="footer-links">
-
-<h4>Contact</h4>
-
-<a href="mailto:fromhookstohope@gmail.com" class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<path d="M4 6h16v12H4z"></path>
-<path d="M22 6l-10 7L2 6"></path>
-
-</svg>
-
-</span>
-
-fromhookstohope@gmail.com
-
-</a>
-
-</div>
-
-<div class="footer-links">
-
-<h4>Follow Us</h4>
-
-<a href="https://instagram.com/fromhookstohope"
-target="_blank"
-rel="noopener noreferrer"
-class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
-<circle cx="12" cy="12" r="4.2"></circle>
-<circle cx="17.5" cy="6.5" r="1"></circle>
-
-</svg>
-
-</span>
-
-@fromhookstohope
-
-</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>© 2026 From Hooks to Hope</p>
-</div>
-
-</footer>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('header nav');
-
-  if (menuToggle && nav) {
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!expanded));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
     });
-  }
-</script>
+
+    document.addEventListener('click', (e) => {
+      dropdowns.forEach((dropdown) => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach((dropdown) => {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        if (siteNav) siteNav.classList.remove('nav-open');
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.14
+    });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+  </script>
+
 </body>
 </html>
