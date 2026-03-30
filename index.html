@@ -1,367 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZLM5SKXDRL');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZLM5SKXDRL');
+  </script>
 
   <link rel="icon" type="image/png" href="/favicon1.png">
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>From Hooks to Hope - Home</title>
+  <title>From Hooks to Hope - Home</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- Clash Display (for headings) -->
-<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <!-- Clash Display -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="nav-shell">
-    <div class="logo">
-      <a href="index.html" aria-label="From Hooks to Hope home">
-        <img src="logoHeader.png" alt="From Hooks to Hope Logo">
-      </a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="logo">
+        <a href="index.html" aria-label="From Hooks to Hope home">
+          <img src="logoHeader.png" alt="From Hooks to Hope Logo">
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              About <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="pastprojects.html">Past Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              Get Involved <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="startchapter.html">Start a Chapter</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="partner.html">Partner</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-donate" href="support.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text reveal reveal-left">
+      <h1>
+        From Hooks to Hope is a student-led nonprofit founded in Chicago<br>
+        that donates handmade crochet plushies to children in hospitals.
+      </h1>
     </div>
 
-    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="mission reveal reveal-right">
+      <h3>Our Mission</h3>
+      <p>
+        We are dedicated to creating handmade plush items for pediatric patients.
+        By designing and crocheting each item entirely by hand, we partner with
+        hospitals to provide comfort and emotional support to children during
+        hospital stays while connecting crocheters with communities in need.
+      </p>
+    </div>
+  </section>
 
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
+  <div class="hero-divider">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,50 Q720,120 1440,50 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
 
-        <li class="dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" type="button">
-            About <span class="caret">⌄</span>
-          </button>
-          <ul class="dropdown-content">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="ourteam.html">Our Team</a></li>
-            <li><a href="pastprojects.html">Past Projects</a></li>
-          </ul>
-        </li>
+  <!-- HOME IMPACT -->
+  <div class="home-impact">
 
-        <li class="dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" type="button">
-            Get Involved <span class="caret">⌄</span>
-          </button>
-          <ul class="dropdown-content">
-            <li><a href="startchapter.html">Start a Chapter</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="partner.html">Partner</a></li>
-          </ul>
-        </li>
+    <div class="impact-tagline reveal">
+      <h2>Stitching Compassion Into Every Loop</h2>
+    </div>
 
-        <li><a class="nav-donate" href="support.html">Donate</a></li>
+    <section class="stats reveal">
+      <div class="stat">
+        <h3>15</h3>
+        <p>Members</p>
+      </div>
+
+      <div class="stat">
+        <h3>33</h3>
+        <p>Plushies Donated</p>
+      </div>
+
+      <div class="stat">
+        <h3>2</h3>
+        <p>Hospital Partners</p>
+      </div>
+    </section>
+
+    <!-- COLLAGE -->
+    <section class="photo-masonry reveal">
+      <img src="members.jpg" alt="From Hooks to Hope members together">
+      <img src="winterdrive3.jpg" alt="Winter donation drive">
+
+      <img src="withpatients1.jpg" alt="Plushies prepared for pediatric patients">
+      <img src="penguin-plush.jpg" alt="Handmade penguin plushie">
+      <img src="dogplushie.jpg" alt="Handmade dog plushie">
+      <img src="homepage4.jpg" alt="From Hooks to Hope donation photo">
+      <img src="withpatients2.jpg" alt="Handmade plushies for hospital donation">
+      <img src="homepage6.jpg" alt="From Hooks to Hope event photo">
+      <img src="homepage7.jpg" alt="Crocheted plush donation photo">
+      <img src="homepage8.jpg" alt="From Hooks to Hope community photo">
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works reveal">
+      <div class="section-heading">
+        <h2>How It Works</h2>
+        <p>
+          From Hooks to Hope turns handmade creativity into meaningful comfort
+          through a simple, community-centered process.
+        </p>
+      </div>
+
+      <div class="process-wrap">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-number">01</div>
+          <div class="process-text">
+            <h3>We Crochet</h3>
+            <p>Our members design and crochet handmade plushies with care, creativity, and comfort in mind.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-number">02</div>
+          <div class="process-text">
+            <h3>We Organize</h3>
+            <p>We collect finished plushies, coordinate donation efforts, and prepare each project for hospital partners.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-number">03</div>
+          <div class="process-text">
+            <h3>We Donate</h3>
+            <p>We deliver plushies to pediatric patients so each child receives something handmade and heartfelt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- NETWORK -->
+  <section class="network-section">
+    <div class="network-column reveal reveal-delay-1">
+      <h2>Hospital Partners</h2>
+      <ul class="network-list">
+        <li>Ann &amp; Robert H. Lurie Children’s Hospital of Chicago</li>
+        <li>John H. Stroger, Jr. Hospital of Cook County</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<!-- HERO SECTION -->
-
-<section class="hero">
-
-  <div class="hero-text">
-    <h1>
-  From Hooks to Hope is a student-led nonprofit founded in Chicago<br>
-  that donates handmade crochet plushies to children in hospitals.
-</h1>
-  </div>
-
-  <div class="mission">
-    <h3>Our Mission</h3>
-
-    <p>
-      We are dedicated to creating handmade plush items for pediatric patients. 
-      By designing and crocheting each item entirely by hand, we partner with 
-      hospitals to provide comfort and emotional support to children during 
-      hospital stays while connecting crocheters with communities in need.
-    </p>
-  </div>
-
-</section>
-
-<div class="hero-divider">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,50 Q720,120 1440,50 L1440,120 L0,120 Z"></path>
-  </svg>
-</div>
-  
-<!-- STATS -->
-
-<div class="home-impact">
-
-<div class="impact-tagline">
-  <h2>Stitching Compassion Into Every Loop</h2>
-</div>
-
-<section class="stats">
-
-<div class="stat">
-<h3>15</h3>
-<p>Members</p>
-</div>
-
-<div class="stat">
-<h3>33</h3>
-<p>Plushies Donated</p>
-</div>
-
-<div class="stat">
-<h3>2</h3>
-<p>Hospital Partners</p>
-</div>
-
-</section>
-
-
-  <!-- COLLAGE -->
-
-
-
-<section class="photo-masonry">
-
-  <img src="members.jpg" alt="">
-  <img src="winterdrive3.jpg" alt="">
-
-  <img src="withpatients1.jpg" alt="">
-  <img src="penguin-plush.jpg" alt="">
-  <img src="dogplushie.jpg" alt="">
-  <img src="homepage4.jpg" alt="">
-  <img src="withpatients2.jpg" alt="">
-  <img src="homepage6.jpg" alt="">
-  <img src="homepage7.jpg" alt="">
-  <img src="homepage8.jpg" alt="">
-  <!-- <img src="homepage9.jpg" alt="">
-  <img src="homepage10.jpg" alt="">
-  <img src="homepage11.jpg" alt="">
-  <img src="homepage12.jpg" alt=""> -->
-
-</section>
-
-
-<!-- HOW IT WORKS -->
-
-  
-<section class="how-it-works">
-  <div class="section-heading">
-    <h2>How It Works</h2>
-    <p>
-      From Hooks to Hope turns handmade creativity into meaningful comfort
-      through a simple, community-centered process.
-    </p>
-  </div>
-
-  <div class="process-wrap">
-    <div class="process-step">
-      <div class="process-number">01</div>
-      <div class="process-text">
-        <h3>We Crochet</h3>
-        <p>Our members design and crochet handmade plushies with care, creativity, and comfort in mind.</p>
-      </div>
     </div>
 
-    <div class="process-step">
-      <div class="process-number">02</div>
-      <div class="process-text">
-        <h3>We Organize</h3>
-        <p>We collect finished plushies, coordinate donation efforts, and prepare each project for hospital partners.</p>
+    <div class="network-column reveal reveal-delay-2">
+      <h2>Chapter Locations</h2>
+      <ul class="network-list">
+        <li>Walter Payton College Preparatory High School - Chicago, Illinois</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <h3>From Hooks to Hope</h3>
+        <p>
+          Handmade comfort for pediatric patients through compassion,
+          creativity, and community.
+        </p>
       </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+          </span>
+          fromhookstohope@gmail.com
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="https://instagram.com/fromhookstohope"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </span>
+          @fromhookstohope
+        </a>
+      </div>
+
     </div>
 
-    <div class="process-step">
-      <div class="process-number">03</div>
-      <div class="process-text">
-        <h3>We Donate</h3>
-        <p>We deliver plushies to pediatric patients so each child receives something handmade and heartfelt.</p>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2026 From Hooks to Hope</p>
     </div>
-  </div>
-</section>
-  
-</div>
-<section class="network-section">
+  </footer>
 
-  <div class="network-column">
-    <h2>Hospital Partners</h2>
-    <ul class="network-list">
-      <li>Ann &amp; Robert H. Lurie Children’s Hospital of Chicago</li>
-      <li>John H. Stroger, Jr. Hospital of Cook County</li>
-    </ul>
-  </div>
-
-  <div class="network-column">
-    <h2>Chapter Locations</h2>
-    <ul class="network-list">
-      <li>Walter Payton College Preparatory High School - Chicago, Illinois</li>
-    </ul>
-  </div>
-
-</section>
-
-  
-<div class="footer-wave">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
-  </svg>
-</div>
-<footer class="site-footer">
-
-<div class="footer-content">
-
-<div class="footer-brand">
-
-
-<h3>From Hooks to Hope</h3>
-
-<p>
-Handmade comfort for pediatric patients through compassion,
-creativity, and community.
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<h4>Contact</h4>
-
-<a href="mailto:fromhookstohope@gmail.com" class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<path d="M4 6h16v12H4z"></path>
-<path d="M22 6l-10 7L2 6"></path>
-
-</svg>
-
-</span>
-
-fromhookstohope@gmail.com
-
-</a>
-
-</div>
-
-<div class="footer-links">
-
-<h4>Follow Us</h4>
-
-<a href="https://instagram.com/fromhookstohope"
-target="_blank"
-rel="noopener noreferrer"
-class="footer-link">
-
-<span class="footer-icon">
-
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-stroke-linecap="round" stroke-linejoin="round">
-
-<rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
-<circle cx="12" cy="12" r="4.2"></circle>
-<circle cx="17.5" cy="6.5" r="1"></circle>
-
-</svg>
-
-</span>
-
-@fromhookstohope
-
-</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>© 2026 From Hooks to Hope</p>
-</div>
-
-</footer>
   <script>
-  // NAV TOGGLE
-  const menuToggle = document.querySelector('.menu-toggle');
-  const siteNav = document.querySelector('.site-nav');
-  const dropdowns = document.querySelectorAll('.dropdown');
+    // NAV TOGGLE
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-  if (menuToggle && siteNav) {
-    menuToggle.addEventListener('click', () => {
-      siteNav.classList.toggle('nav-open');
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!expanded));
-    });
-  }
-
-  // DROPDOWNS
-  dropdowns.forEach((dropdown) => {
-    const toggle = dropdown.querySelector('.dropdown-toggle');
-
-    if (!toggle) return;
-
-    toggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-
-      const isOpen = dropdown.classList.contains('open');
-
-      dropdowns.forEach((item) => {
-        item.classList.remove('open');
-        const btn = item.querySelector('.dropdown-toggle');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('nav-open');
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
       });
+    }
 
-      if (!isOpen) {
-        dropdown.classList.add('open');
-        toggle.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-
-  document.addEventListener('click', (e) => {
+    // DROPDOWNS
     dropdowns.forEach((dropdown) => {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-        const btn = dropdown.querySelector('.dropdown-toggle');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+
+      if (!toggle) return;
+
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        const isOpen = dropdown.classList.contains('open');
+
+        dropdowns.forEach((item) => {
+          item.classList.remove('open');
+          const btn = item.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      dropdowns.forEach((dropdown) => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach((dropdown) => {
+          dropdown.classList.remove('open');
+          const btn = dropdown.querySelector('.dropdown-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        if (siteNav) siteNav.classList.remove('nav-open');
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
       }
     });
-  });
 
-  // SCROLL REVEAL
-  const revealItems = document.querySelectorAll('.reveal');
+    // SCROLL REVEAL
+    const revealItems = document.querySelectorAll('.reveal');
 
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.14
     });
-  }, {
-    threshold: 0.14
-  });
 
-  revealItems.forEach((item) => revealObserver.observe(item));
-</script>
+    revealItems.forEach((item) => revealObserver.observe(item));
+  </script>
+
 </body>
-
 </html>
