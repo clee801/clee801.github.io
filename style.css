@@ -1947,3 +1947,8 @@ header{
     font-size:1.8rem;
   }
 }
+
+.highlight-name{
+  color:#e3b65a;
+  font-weight:600;
+}
