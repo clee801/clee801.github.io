@@ -1692,6 +1692,8 @@ header{
     border-radius:18px;
     background:rgba(255,255,255,0.08);
     font-size:18px;
+   min-height:50px;
+
   }
 
   .dropdown-content{
