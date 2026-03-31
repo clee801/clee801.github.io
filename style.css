@@ -1672,9 +1672,15 @@ header{
   padding-top:10px;
 }
 
+
+   
   .nav-list > li{
   width:100%;
   margin:0;
+  }
+
+   .nav-list > li + li{
+  margin-top:2px;
 }
 
   .site-nav a,
