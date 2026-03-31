@@ -124,8 +124,12 @@ header{
   margin-bottom:14px;
 }
 
+
+.support-section-heading p{
+  color:rgba(255,255,255,0.75);
+}
+
 .section-heading p,
-.support-section-heading p,
 .team-heading p,
 .about-hero p,
 .projects-hero p,
