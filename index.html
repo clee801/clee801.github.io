@@ -22,9 +22,58 @@
 
 <body>
 
-  <!-- NAVBAR LOADED HERE -->
-  <div id="navbar"></div>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="nav-shell">
 
+      <div class="logo">
+        <a href="index.html" aria-label="From Hooks to Hope home">
+          <img src="logoHeader.png" alt="From Hooks to Hope Logo">
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              About <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="impact.html">Impact</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" type="button">
+              Get Involved <span class="caret">⌄</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="startchapter.html">Start a Chapter</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="partner.html">Partner</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-donate" href="support.html">Donate</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-text reveal reveal-left">
       <h1>
@@ -78,9 +127,9 @@
       <img src="penguin-plush.jpg" alt="Handmade penguin plushie">
       <img src="dogplushie.jpg" alt="Handmade dog plushie">
       <img src="homepage4.jpg" alt="Donation photo">
-      <img src="withpatients2.jpg" alt="Plushies donation">
+      <img src="withpatients2.jpg" alt="Hospital donation plushies">
       <img src="homepage6.jpg" alt="Event photo">
-      <img src="homepage7.jpg" alt="Crocheted plush donation photo">
+      <img src="homepage7.jpg" alt="Crocheted plush donation">
       <img src="homepage8.jpg" alt="Community photo">
     </section>
 
@@ -106,7 +155,7 @@
           <div class="process-number">02</div>
           <div class="process-text">
             <h3>We Organize</h3>
-            <p>We coordinate donations and prepare projects for hospitals.</p>
+            <p>We prepare and coordinate all donation efforts.</p>
           </div>
         </div>
 
@@ -114,19 +163,20 @@
           <div class="process-number">03</div>
           <div class="process-text">
             <h3>We Donate</h3>
-            <p>We deliver handmade plushies to pediatric patients.</p>
+            <p>We deliver handmade comfort directly to children in hospitals.</p>
           </div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- NETWORK -->
   <section class="network-section">
     <div class="network-column reveal reveal-delay-1">
       <h2>Hospital Partners</h2>
       <ul class="network-list">
-        <li>Lurie Children’s Hospital of Chicago</li>
-        <li>Stroger Hospital of Cook County</li>
+        <li>Ann &amp; Robert H. Lurie Children’s Hospital of Chicago</li>
+        <li>John H. Stroger, Jr. Hospital of Cook County</li>
       </ul>
     </div>
 
@@ -140,6 +190,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <div class="footer-wave">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
       <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
@@ -148,6 +199,7 @@
 
   <footer class="site-footer">
     <div class="footer-content">
+
       <div class="footer-brand">
         <h3>From Hooks to Hope</h3>
         <p>Handmade comfort for pediatric patients through compassion, creativity, and community.</p>
@@ -155,13 +207,18 @@
 
       <div class="footer-links">
         <h4>Contact</h4>
-        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">fromhookstohope@gmail.com</a>
+        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
+          fromhookstohope@gmail.com
+        </a>
       </div>
 
       <div class="footer-links">
         <h4>Follow Us</h4>
-        <a href="https://instagram.com/fromhookstohope" target="_blank">@fromhookstohope</a>
+        <a href="https://instagram.com/fromhookstohope" target="_blank">
+          @fromhookstohope
+        </a>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -169,24 +226,43 @@
     </div>
   </footer>
 
-  <!-- LOAD NAVBAR -->
+  <!-- SCRIPT -->
   <script>
-    fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('nav-open');
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
       });
-  </script>
+    }
 
-  <!-- PAGE SCRIPT -->
-  <script>
+    dropdowns.forEach((dropdown) => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        const isOpen = dropdown.classList.contains('open');
+
+        dropdowns.forEach(d => d.classList.remove('open'));
+
+        if (!isOpen) dropdown.classList.add('open');
+      });
+    });
+
+    document.addEventListener('click', () => {
+      dropdowns.forEach(d => d.classList.remove('open'));
+    });
+
     const revealItems = document.querySelectorAll('.reveal');
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.14 });
