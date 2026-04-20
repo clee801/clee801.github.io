@@ -22,52 +22,16 @@
 
 <body>
 
-  <!-- NAV -->
-  <header class="site-header">
-    <div class="nav-shell">
-      <div class="logo">
-        <a href="index.html">
-          <img src="logoHeader.png" alt="From Hooks to Hope Logo">
-        </a>
-      </div>
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
 
-      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-
-          <li class="dropdown">
-            <button class="dropdown-toggle" type="button">
-              About <span class="caret">⌄</span>
-            </button>
-            <ul class="dropdown-content">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="ourteam.html">Our Team</a></li>
-              <li><a href="pastprojects.html">Past Projects</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <button class="dropdown-toggle" type="button">
-              Get Involved <span class="caret">⌄</span>
-            </button>
-            <ul class="dropdown-content">
-              <li><a href="startchapter.html">Start a Chapter</a></li>
-              <li><a href="volunteer.html">Volunteer</a></li>
-              <li><a href="partner.html">Partner</a></li>
-            </ul>
-          </li>
-
-          <li><a class="nav-donate" href="support.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
 
   <!-- PROFILE -->
   <main class="member-page">
@@ -113,9 +77,9 @@
       </div>
 
       <div class="member-gallery">
-        <img src="charlotte-make1.jpg" class="reveal reveal-delay-1">
-        <img src="charlotte-make2.jpg" class="reveal reveal-delay-2">
-        <img src="charlotte-make3.jpg" class="reveal reveal-delay-3">
+        <img src="charlotte-make1.jpg" class="reveal reveal-delay-1" alt="">
+        <img src="charlotte-make2.jpg" class="reveal reveal-delay-2" alt="">
+        <img src="charlotte-make3.jpg" class="reveal reveal-delay-3" alt="">
       </div>
     </section>
 
@@ -157,40 +121,10 @@
     </div>
   </footer>
 
-  <!-- SCRIPT -->
+  <!-- REVEAL ONLY -->
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    if (menuToggle && siteNav) {
-      menuToggle.addEventListener('click', () => {
-        siteNav.classList.toggle('nav-open');
-      });
-    }
-
-    dropdowns.forEach((dropdown) => {
-      const toggle = dropdown.querySelector('.dropdown-toggle');
-
-      toggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-
-        const isOpen = dropdown.classList.contains('open');
-
-        dropdowns.forEach(d => d.classList.remove('open'));
-
-        if (!isOpen) {
-          dropdown.classList.add('open');
-        }
-      });
-    });
-
-    document.addEventListener('click', () => {
-      dropdowns.forEach(d => d.classList.remove('open'));
-    });
-
-    // reveal animation
     const revealItems = document.querySelectorAll('.reveal');
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
