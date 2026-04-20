@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLM5SKXDRL"></script>
   <script>
@@ -22,242 +23,230 @@
 
 <body>
 
-<header class="site-header">
-  <div class="nav-shell">
+  <!-- NAVBAR (loaded from navbar.html) -->
+  <div id="navbar"></div>
 
-    <div class="logo">
-      <a href="index.html" aria-label="From Hooks to Hope home">
-        <img src="logoHeader.png" alt="From Hooks to Hope Logo">
-      </a>
-    </div>
+  <main>
 
-    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-
-        <li class="dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" type="button">
-            About <span class="caret">⌄</span>
-          </button>
-          <ul class="dropdown-content">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="ourteam.html">Our Team</a></li>
-            <li><a href="impact.html">Impact</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" type="button">
-            Get Involved <span class="caret">⌄</span>
-          </button>
-          <ul class="dropdown-content">
-            <li><a href="startchapter.html">Start a Chapter</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="partner.html">Partner</a></li>
-          </ul>
-        </li>
-
-        <li><a class="nav-donate" href="support.html">Donate</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="projects-hero reveal">
-    <div class="projects-hero-content">
-      <h1>Our Impact</h1>
-      <p>
-        Every stitch reaches a child, a hospital, and a community.
-        From Hooks to Hope is built on care, creativity, and connection.
-      </p>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="home-impact">
-    <div class="impact-tagline reveal">
-      <h2>What We’ve Built Together</h2>
-    </div>
-
-    <section class="stats reveal">
-      <div class="stat">
-        <h3>23</h3>
-        <p>Members</p>
-      </div>
-
-      <div class="stat">
-        <h3>33</h3>
-        <p>Plushies Donated</p>
-      </div>
-
-      <div class="stat">
-        <h3>2</h3>
-        <p>Hospital Partners</p>
+    <!-- HERO -->
+    <section class="projects-hero reveal">
+      <div class="projects-hero-content">
+        <h1>Our Impact</h1>
+        <p>
+          Every stitch reaches a child, a hospital, and a community.
+          From Hooks to Hope is built on care, creativity, and connection.
+        </p>
       </div>
     </section>
-  </section>
 
-  <!-- HOSPITALS -->
-  <section class="network-section">
-    <div class="network-column reveal">
-      <h2>Hospital Partners</h2>
-      <ul class="network-list">
-        <li>Ann & Robert H. Lurie Children’s Hospital of Chicago</li>
-        <li>John H. Stroger, Jr. Hospital of Cook County</li>
-      </ul>
-    </div>
+    <!-- STATS -->
+    <section class="home-impact">
+      <div class="impact-tagline reveal">
+        <h2>What We’ve Built Together</h2>
+      </div>
 
-    <div class="network-column reveal">
-      <h2>Chapter Locations</h2>
-      <ul class="network-list">
-        <li>Walter Payton College Preparatory High School</li>
-        <li>Lincoln Park High School</li>
-        <li>Jones College Prep (Launching Fall 2026)</li>
-      </ul>
-    </div>
-  </section>
+      <section class="stats reveal">
+        <div class="stat">
+          <h3>23</h3>
+          <p>Members</p>
+        </div>
 
-  <!-- PHOTO GALLERY -->
-  <section class="home-impact">
-    <div class="impact-tagline reveal">
-      <h2>Moments From Our Work</h2>
-    </div>
+        <div class="stat">
+          <h3>33</h3>
+          <p>Plushies Donated</p>
+        </div>
 
-    <section class="photo-masonry reveal">
+        <div class="stat">
+          <h3>2</h3>
+          <p>Hospital Partners</p>
+        </div>
+      </section>
+    </section>
 
-      <img src="members.jpg" alt="From Hooks to Hope members together">
-      <img src="winterdrive3.jpg" alt="Donation drive plushies">
-      <img src="withpatients1.jpg" alt="Plushies prepared for hospital donation">
-      <img src="penguin-plush.jpg" alt="Handmade penguin plushie">
-      <img src="dogplushie.jpg" alt="Handmade dog plushie">
-      <img src="homepage4.jpg" alt="Donation event photo">
-      <img src="withpatients2.jpg" alt="Hospital donation preparation">
-      <img src="homepage6.jpg" alt="Community event photo">
+    <!-- HOSPITAL + CHAPTERS -->
+    <section class="network-section">
+
+      <div class="network-column reveal">
+        <h2>Hospital Partners</h2>
+        <ul class="network-list">
+          <li>Ann & Robert H. Lurie Children’s Hospital of Chicago</li>
+          <li>John H. Stroger, Jr. Hospital of Cook County</li>
+        </ul>
+      </div>
+
+      <div class="network-column reveal">
+        <h2>Chapter Locations</h2>
+        <ul class="network-list">
+          <li>Walter Payton College Preparatory High School</li>
+          <li>Lincoln Park High School</li>
+          <li>Jones College Prep (Launching Fall 2026)</li>
+        </ul>
+      </div>
 
     </section>
-  </section>
 
-</main>
+    <!-- PHOTO GALLERY -->
+    <section class="home-impact">
 
-<div class="footer-wave">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
-  </svg>
-</div>
+      <div class="impact-tagline reveal">
+        <h2>Moments From Our Work</h2>
+      </div>
 
-<footer class="site-footer">
-  <div class="footer-content">
+      <section class="photo-masonry reveal">
 
-    <div class="footer-brand">
-      <h3>From Hooks to Hope</h3>
-      <p>
-        Handmade comfort for pediatric patients through compassion,
-        creativity, and community.
-      </p>
-    </div>
+        <img src="members.jpg" alt="From Hooks to Hope members together">
+        <img src="winterdrive3.jpg" alt="Donation drive plushies">
+        <img src="withpatients1.jpg" alt="Plushies prepared for hospital donation">
+        <img src="penguin-plush.jpg" alt="Handmade penguin plushie">
+        <img src="dogplushie.jpg" alt="Handmade dog plushie">
+        <img src="homepage4.jpg" alt="Donation event photo">
+        <img src="withpatients2.jpg" alt="Hospital donation preparation">
+        <img src="homepage6.jpg" alt="Community event photo">
 
-    <div class="footer-links">
-      <h4>Contact</h4>
-      <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
-        <span class="footer-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16v12H4z"></path>
-            <path d="M22 6l-10 7L2 6"></path>
-          </svg>
-        </span>
-        fromhookstohope@gmail.com
-      </a>
-    </div>
+      </section>
 
-    <div class="footer-links">
-      <h4>Follow Us</h4>
-      <a href="https://instagram.com/fromhookstohope"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="footer-link">
-        <span class="footer-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
-            <circle cx="12" cy="12" r="4.2"></circle>
-            <circle cx="17.5" cy="6.5" r="1"></circle>
-          </svg>
-        </span>
-        @fromhookstohope
-      </a>
-    </div>
+    </section>
 
+  </main>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,70 Q720,0 1440,70 L1440,120 L0,120 Z"></path>
+    </svg>
   </div>
 
-  <div class="footer-bottom">
-    <p>© 2026 From Hooks to Hope</p>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <div class="footer-content">
 
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const siteNav = document.querySelector('.site-nav');
-  const dropdowns = document.querySelectorAll('.dropdown');
+      <div class="footer-brand">
+        <h3>From Hooks to Hope</h3>
+        <p>
+          Handmade comfort for pediatric patients through compassion,
+          creativity, and community.
+        </p>
+      </div>
 
-  menuToggle?.addEventListener('click', () => {
-    siteNav.classList.toggle('nav-open');
-    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!expanded));
-  });
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:fromhookstohope@gmail.com" class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+          </span>
+          fromhookstohope@gmail.com
+        </a>
+      </div>
 
-  dropdowns.forEach((dropdown) => {
-    const toggle = dropdown.querySelector('.dropdown-toggle');
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <a href="https://instagram.com/fromhookstohope"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="footer-link">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </span>
+          @fromhookstohope
+        </a>
+      </div>
 
-    toggle?.addEventListener('click', (e) => {
-      e.stopPropagation();
+    </div>
 
-      const isOpen = dropdown.classList.contains('open');
+    <div class="footer-bottom">
+      <p>© 2026 From Hooks to Hope</p>
+    </div>
+  </footer>
 
-      dropdowns.forEach((item) => {
-        item.classList.remove('open');
-        item.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+  <!-- NAVBAR SCRIPT LOADER + INIT -->
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        initNavbar();
       });
 
-      if (!isOpen) {
-        dropdown.classList.add('open');
-        toggle.setAttribute('aria-expanded', 'true');
+    function initNavbar() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const siteNav = document.querySelector('.site-nav');
+      const dropdowns = document.querySelectorAll('.dropdown');
+
+      if (menuToggle && siteNav) {
+        menuToggle.addEventListener('click', () => {
+          siteNav.classList.toggle('nav-open');
+          const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', String(!expanded));
+        });
       }
-    });
-  });
 
-  document.addEventListener('click', (e) => {
-    dropdowns.forEach((dropdown) => {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-        dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
+      dropdowns.forEach((dropdown) => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
 
-  const revealItems = document.querySelectorAll('.reveal');
+        if (!toggle) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.14 });
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
 
-  revealItems.forEach((el) => observer.observe(el));
-</script>
+          const isOpen = dropdown.classList.contains('open');
+
+          dropdowns.forEach((item) => {
+            item.classList.remove('open');
+            const btn = item.querySelector('.dropdown-toggle');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          });
+
+          if (!isOpen) {
+            dropdown.classList.add('open');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        dropdowns.forEach((dropdown) => {
+          if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+            const btn = dropdown.querySelector('.dropdown-toggle');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove('open');
+            const btn = dropdown.querySelector('.dropdown-toggle');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          });
+
+          if (siteNav) siteNav.classList.remove('nav-open');
+          if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      const revealItems = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      revealItems.forEach(el => observer.observe(el));
+    }
+  </script>
 
 </body>
 </html>
