@@ -39,9 +39,6 @@ body{
   font-family:'Poppins', sans-serif;
   color:var(--text);
   line-height:1.6;
-   background-image: url("crochet-pattern.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
 
 }
 
@@ -1962,8 +1959,4 @@ header{
 .highlight-name{
   color:#e3b65a;
   font-weight:600;
-}
-
-.projects-hero {
-  background-image: url("crochet-pattern.png");
 }
