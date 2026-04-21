@@ -131,5 +131,29 @@
 
   </section>
 
+  <script>
+  document.querySelectorAll(".dropdown-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const dropdown = button.parentElement;
+
+      // close other dropdowns first (clean behavior)
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  // close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown")) {
+      document.querySelectorAll(".dropdown").forEach(d => {
+        d.classList.remove("open");
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
