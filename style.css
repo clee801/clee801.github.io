@@ -1983,3 +1983,7 @@ header{
   z-index: 9999;
   position: sticky;
 }
+
+.impact-page .home-impact{
+  background: transparent;
+}
