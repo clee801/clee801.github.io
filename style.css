@@ -1961,10 +1961,6 @@ header{
   font-weight:600;
 }
 
-/* =========================
-   IMPACT PAGE FULL CROCHET BACKGROUND
-========================= */
-
 .impact-page{
   position: relative;
   background: var(--bg-soft);
@@ -1990,4 +1986,5 @@ header{
 .site-header{
   z-index: 9999;
   position: sticky;
+}
 }
