@@ -1960,3 +1960,7 @@ header{
   color:#e3b65a;
   font-weight:600;
 }
+
+.projects-hero {
+  background-image: url("crochet-pattern.png");
+}
