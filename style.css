@@ -1986,3 +1986,8 @@ header{
   position: relative;
   z-index: 1;
 }
+
+.site-header{
+  z-index: 9999;
+  position: sticky;
+}
