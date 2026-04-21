@@ -694,7 +694,7 @@ header{
   grid-template-columns:repeat(2, minmax(0, 1fr));
   gap:24px;
   padding:0 0 92px 0;
-  background:var(--bg-soft);
+  background: transparent;
 }
 
 .network-column{
