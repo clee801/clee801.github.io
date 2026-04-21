@@ -1960,3 +1960,29 @@ header{
   color:#e3b65a;
   font-weight:600;
 }
+
+/* =========================
+   IMPACT PAGE FULL CROCHET BACKGROUND
+========================= */
+
+.impact-page{
+  position: relative;
+  background: var(--bg-soft);
+}
+
+.impact-page::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("crochet-pattern.png");
+  background-size: 520px;
+  background-repeat: repeat;
+  opacity: 0.06; 
+  pointer-events: none;
+  z-index: 0;
+}
+
+.impact-page > *{
+  position: relative;
+  z-index: 1;
+}
