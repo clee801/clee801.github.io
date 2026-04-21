@@ -1974,18 +1974,6 @@ header{
   background-attachment: scroll;
 }
 
-.impact-page::before{
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("crochet-pattern.png");
-  background-size: 520px;
-  background-repeat: repeat;
-  opacity: 0.06; 
-  pointer-events: none;
-  z-index: 0;
-}
-
 .impact-page > *{
   position: relative;
   z-index: 1;
