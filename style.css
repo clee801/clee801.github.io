@@ -1966,7 +1966,12 @@ header{
 
 .impact-page{
   position: relative;
-  background: var(--bg-soft);
+   background:
+    linear-gradient(rgba(255,246,224,0.78), rgba(255,246,224,0.78)),
+    url("crochet-pattern.png");
+  background-size: cover, 520px;
+  background-repeat: no-repeat, repeat;
+  background-attachment: scroll;
 }
 
 .impact-page::before{
