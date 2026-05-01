@@ -1987,3 +1987,10 @@ header{
 .impact-page .home-impact{
   background: transparent;
 }
+
+.hero-cta{
+  display:flex;
+  gap:14px;
+  margin-top:26px;
+  flex-wrap:wrap;
+}
