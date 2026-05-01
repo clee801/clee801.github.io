@@ -23,8 +23,11 @@
 </head>
 
 <body class="impact-page">
+
+  <!-- NAV -->
   <header class="site-header">
     <div class="nav-shell">
+
       <div class="logo">
         <a href="index.html">
           <img src="logoHeader.png" alt="From Hooks to Hope Logo">
@@ -41,8 +44,8 @@
 
           <li class="dropdown">
             <button class="dropdown-toggle" type="button">
-  About <span class="caret">▾</span>
-</button>
+              About <span class="caret">▾</span>
+            </button>
             <ul class="dropdown-content">
               <li><a href="about.html">About Us</a></li>
               <li><a href="ourteam.html">Our Team</a></li>
@@ -51,9 +54,9 @@
           </li>
 
           <li class="dropdown">
-           <button class="dropdown-toggle" type="button">
-  Get Involved <span class="caret">▾</span>
-</button>
+            <button class="dropdown-toggle" type="button">
+              Get Involved <span class="caret">▾</span>
+            </button>
             <ul class="dropdown-content">
               <li><a href="startchapter.html">Start a Chapter</a></li>
               <li><a href="volunteer.html">Volunteer</a></li>
@@ -64,9 +67,11 @@
           <li><a class="nav-donate" href="support.html">Donate</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="projects-hero reveal">
     <div class="projects-hero-content">
       <h1>Our Impact</h1>
@@ -77,24 +82,26 @@
     </div>
   </section>
 
-    <section class="stats reveal">
-      <div class="stat">
-        <h3>35</h3>
-        <p>Members</p>
-      </div>
+  <!-- STATS -->
+  <section class="stats reveal">
+    <div class="stat">
+      <h3>35</h3>
+      <p>Members</p>
+    </div>
 
-      <div class="stat">
-        <h3>33</h3>
-        <p>Plushies Donated</p>
-      </div>
+    <div class="stat">
+      <h3>33</h3>
+      <p>Plushies Donated</p>
+    </div>
 
-      <div class="stat">
-        <h3>2</h3>
-        <p>Hospital Partners</p>
-      </div>
-    </section>
+    <div class="stat">
+      <h3>2</h3>
+      <p>Hospital Partners</p>
+    </div>
+  </section>
 
- <section class="network-section">
+  <!-- NETWORK -->
+  <section class="network-section">
 
     <div class="network-column reveal">
       <h2>Hospital Partners</h2>
@@ -112,14 +119,12 @@
         <li>Lincoln Park High School - Chicago, IL</li>
         <li>Jones College Prep - Chicago, IL (Launching 2026)</li>
         <li>George Westinghouse High School - Chicago, IL (Launching 2026)</li>
-
       </ul>
     </div>
 
   </section>
 
-  
-  
+  <!-- GALLERY -->
   <section class="photo-masonry reveal">
     <img src="members.jpg" alt="">
     <img src="winterdrive3.jpg" alt="">
@@ -129,65 +134,42 @@
     <img src="homepage4.jpg" alt="">
   </section>
 
- 
+  <!-- SCRIPT (FIXED) -->
   <script>
-  document.querySelectorAll(".dropdown-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-      const dropdown = button.parentElement;
+    // dropdowns
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+      button.addEventListener("click", (e) => {
+        e.stopPropagation();
 
-      // close other dropdowns first (clean behavior)
-      document.querySelectorAll(".dropdown").forEach(d => {
-        if (d !== dropdown) d.classList.remove("open");
+        const dropdown = button.parentElement;
+
+        document.querySelectorAll(".dropdown").forEach(d => {
+          if (d !== dropdown) d.classList.remove("open");
+        });
+
+        dropdown.classList.toggle("open");
       });
-
-      dropdown.classList.toggle("open");
     });
-  });
 
-  // close dropdown when clicking outside
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".dropdown")) {
+    document.addEventListener("click", () => {
       document.querySelectorAll(".dropdown").forEach(d => {
         d.classList.remove("open");
       });
-    }
-  });
-
-    <script>
-  // dropdowns
-  document.querySelectorAll(".dropdown-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-      const dropdown = button.parentElement;
-
-      document.querySelectorAll(".dropdown").forEach(d => {
-        if (d !== dropdown) d.classList.remove("open");
-      });
-
-      dropdown.classList.toggle("open");
     });
-  });
 
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".dropdown")) {
-      document.querySelectorAll(".dropdown").forEach(d => {
-        d.classList.remove("open");
+    // reveal animation
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
       });
-    }
-  });
+    }, { threshold: 0.14 });
 
-  // 👇 THIS IS THE MISSING PART
-  const revealItems = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
-    });
-  }, { threshold: 0.14 });
-
-  revealItems.forEach(el => observer.observe(el));
-</script>
-</script>
+    revealItems.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
