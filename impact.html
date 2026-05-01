@@ -152,6 +152,41 @@
       });
     }
   });
+
+    <script>
+  // dropdowns
+  document.querySelectorAll(".dropdown-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const dropdown = button.parentElement;
+
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown")) {
+      document.querySelectorAll(".dropdown").forEach(d => {
+        d.classList.remove("open");
+      });
+    }
+  });
+
+  // 👇 THIS IS THE MISSING PART
+  const revealItems = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.14 });
+
+  revealItems.forEach(el => observer.observe(el));
+</script>
 </script>
 
 </body>
