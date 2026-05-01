@@ -253,6 +253,29 @@
     }, { threshold: 0.14 });
 
     revealItems.forEach(el => observer.observe(el));
+    const counters = document.querySelectorAll('.stat h3');
+
+counters.forEach(counter => {
+  const update = () => {
+    const target = +counter.innerText;
+    let current = 0;
+    const increment = target / 60;
+
+    const step = () => {
+      current += increment;
+      if (current < target) {
+        counter.innerText = Math.ceil(current);
+        requestAnimationFrame(step);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    step();
+  };
+
+  update();
+});
   </script>
 
 </body>
