@@ -223,70 +223,95 @@
 
   <!-- SCRIPT -->
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    const dropdowns = document.querySelectorAll('.dropdown');
+/* NAV */
+const menuToggle = document.querySelector('.menu-toggle');
+const siteNav = document.querySelector('.site-nav');
 
-    if (menuToggle && siteNav) {
-      menuToggle.addEventListener('click', () => {
-        siteNav.classList.toggle('nav-open');
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', String(!expanded));
-      });
-    }
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener('click', () => {
+    siteNav.classList.toggle('nav-open');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+  });
+}
 
-    dropdowns.forEach((dropdown) => {
-      const toggle = dropdown.querySelector('.dropdown-toggle');
+/* DROPDOWNS */
+const dropdowns = document.querySelectorAll('.dropdown');
 
-      toggle.addEventListener('click', (e) => {
-        e.stopPropagation();
+dropdowns.forEach((dropdown) => {
+  const toggle = dropdown.querySelector('.dropdown-toggle');
 
-        const isOpen = dropdown.classList.contains('open');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
 
-        dropdowns.forEach(d => d.classList.remove('open'));
+    const isOpen = dropdown.classList.contains('open');
 
-        if (!isOpen) dropdown.classList.add('open');
-      });
-    });
+    dropdowns.forEach(d => d.classList.remove('open'));
 
-    document.addEventListener('click', () => {
-      dropdowns.forEach(d => d.classList.remove('open'));
-    });
-
-    const revealItems = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
-      });
-    }, { threshold: 0.14 });
-
-    revealItems.forEach(el => observer.observe(el));
-    const counters = document.querySelectorAll('.stat h3');
-
-counters.forEach(counter => {
-  const update = () => {
-    const target = +counter.innerText;
-    let current = 0;
-    const increment = target / 60;
-
-    const step = () => {
-      current += increment;
-      if (current < target) {
-        counter.innerText = Math.ceil(current);
-        requestAnimationFrame(step);
-      } else {
-        counter.innerText = target;
-      }
-    };
-
-    step();
-  };
-
-  update();
+    if (!isOpen) dropdown.classList.add('open');
+  });
 });
-  </script>
+
+document.addEventListener('click', () => {
+  dropdowns.forEach(d => d.classList.remove('open'));
+});
+
+/* REVEAL ON SCROLL */
+const revealItems = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+revealItems.forEach(el => revealObserver.observe(el));
+
+const counters = document.querySelectorAll('.stat h3');
+const statsSection = document.querySelector('.stats');
+
+const runCounters = () => {
+  counters.forEach((counter, index) => {
+    const target = +counter.innerText;
+
+    setTimeout(() => {
+      const duration = 1200;
+      const startTime = performance.now();
+
+      const update = (time) => {
+        const progress = Math.min((time - startTime) / duration, 1);
+        counter.innerText = Math.floor(progress * target);
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      requestAnimationFrame(update);
+    }, index * 200); // stagger effect
+  });
+};
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      runCounters();
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.7,
+  rootMargin: "0px 0px -100px 0px"
+});
+
+if (statsSection) {
+  statsObserver.observe(statsSection);
+}
+</script>
 
 </body>
 </html>
