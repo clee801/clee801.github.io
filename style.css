@@ -474,92 +474,113 @@ header{
    HOME HERO
 ========================= */
 
-.hero{
-  min-height:78vh;
-  display:grid;
-  grid-template-columns:1.2fr 0.8fr;
-  gap:42px;
-  align-items:center;
-  padding:96px 72px;
+.hero {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
 
-  position:relative;
-  overflow:hidden;
+  padding: 96px 72px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 
-  /* IMPORTANT: creates proper stacking context */
-  isolation:isolate;
+  isolation: isolate;
 }
 
-/* BACKGROUND LAYER */
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:-1;
+/* background layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 
   background:
     linear-gradient(rgba(143,106,146,0.58), rgba(143,106,146,0.58)),
     url("plushies-hero.jpg");
 
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  transform:scale(1.05);
+  transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
 }
 
-/* make sure content always sits above background */
-.hero-text,
-.mission{
-  position:relative;
-  z-index:1;
+/* text container */
+.hero-text {
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes heroZoom{
-  from{
-    transform:scale(1.05);
+.hero-text h1 {
+  font-size: clamp(2.25rem, 4vw, 4.3rem);
+  line-height: 1.14;
+  color: #fff4d8;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* mission card */
+.mission {
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+
+  background: rgba(255,214,129,0.28);
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: var(--shadow-lg);
+
+  padding: 28px 30px;
+  border-radius: 28px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  text-align: center;
+}
+
+.mission h3 {
+  color: #fff4d8;
+  margin: 0 0 14px 0;
+  font-size: 2rem;
+}
+
+.mission p {
+  color: #fff6e5;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* animation */
+@keyframes heroZoom {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.14); }
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 20px;
+    gap: 20px;
   }
-  to{
-    transform:scale(1.14);
+
+  .hero-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .mission {
+    padding: 22px 18px;
   }
 }
-.hero-text{
-  max-width:760px;
-}
 
-.hero-text h1{
-  font-size:clamp(2.25rem, 4vw, 4.3rem);
-  line-height:1.14;
-  color:#fff4d8;
-  margin:0;
-  max-width:720px;
-  font-weight:600;
-  text-wrap:balance;
-}
-
-.mission{
-  background:rgba(255,214,129,0.28);
-  border:1px solid rgba(255,255,255,0.16);
-  box-shadow:var(--shadow-lg);
-  padding:28px 30px 30px 30px;
-  border-radius:28px;
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-}
-
-.mission h3{
-  color:#fff4d8;
-  text-align:center;
-  margin:0 0 14px 0;
-  font-size:2rem;
-}
-
-.mission p{
-  color:#fff6e5;
-  line-height:1.8;
-  font-size:1rem;
-  margin:0;
-}
 
 .hero-divider,
 .footer-wave{
