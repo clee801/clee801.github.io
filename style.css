@@ -484,13 +484,17 @@ header{
 
   position:relative;
   overflow:hidden;
+
+  /* keep layout clean */
   background:none;
 }
 
+/* background layer */
 .hero::before{
   content:"";
   position:absolute;
   inset:0;
+  z-index:0;
 
   background:
     linear-gradient(rgba(143,106,146,0.58), rgba(143,106,146,0.58)),
@@ -500,10 +504,26 @@ header{
   background-position:center;
   background-repeat:no-repeat;
 
-  z-index:0;
+  transform:scale(1.08);
+  animation: heroZoom 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
 
-  transform:scale(1);
-  animation:heroZoom 18s ease-in-out infinite alternate;
+/* make sure content is ABOVE background */
+.hero-text,
+.mission{
+  position:relative;
+  z-index:1;
+}
+
+/* zoom animation */
+@keyframes heroZoom{
+  0%{
+    transform:scale(1.05);
+  }
+  100%{
+    transform:scale(1.12);
+  }
 }
 
 .hero-text{
