@@ -1911,7 +1911,18 @@ header{
     gap:22px;
   }
    .impact-stats{
-    grid-template-columns:1fr;
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .impact-divider{
+    width:60px;
+    height:2px;
+  }
+
+  .impact-side{
+    flex-direction:row;
+    gap:40px;
   }
    
 }
