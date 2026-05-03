@@ -1910,6 +1910,9 @@ header{
     grid-template-columns:1fr;
     gap:22px;
   }
+   .impact-stats{
+    grid-template-columns:1fr;
+  }
 }
 
 @media screen and (max-width: 480px){
@@ -2051,3 +2054,5 @@ header{
   margin:6px 0 0 0;
   color:var(--text-soft);
 }
+
+
