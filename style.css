@@ -577,25 +577,23 @@ header{
 }
 
 .stat{
-  background:rgba(255,255,255,0.64);
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:30px 20px;
   text-align:center;
-  box-shadow:var(--shadow-sm);
+  padding:20px 10px;
 }
 
 .stat h3{
-  font-size:3rem;
+  font-size:clamp(3rem, 6vw, 5rem); 
+  font-weight:700;
   color:var(--purple);
   margin:0;
 }
 
 .stat p{
-  margin:8px 0 0 0;
-  font-size:1rem;
+  margin-top:10px;
+  font-size:1.05rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
   color:var(--text-soft);
-  font-weight:500;
 }
 
 .photo-masonry{
