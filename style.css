@@ -551,8 +551,30 @@ header{
 ========================= */
 
 .home-impact{
-  background:var(--bg-soft);
-  padding:22px 0 32px 0;
+  position:relative;
+  overflow:hidden;
+}
+
+.home-impact::before,
+.home-impact::after{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  background:var(--purple-soft);
+  border-radius:50%;
+  filter:blur(40px);
+  opacity:0.5;
+}
+
+.home-impact::before{
+  left:-60px;
+  top:40%;
+}
+
+.home-impact::after{
+  right:-60px;
+  top:20%;
 }
 
 .impact-tagline{
