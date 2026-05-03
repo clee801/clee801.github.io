@@ -568,14 +568,15 @@ header{
   margin:0;
 }
 
+
+
 .stats{
   display:grid;
-  grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:24px;
-  width:min(var(--max), calc(100% - 48px));
-  margin:0 auto 24px auto;
+  grid-template-columns:repeat(3, 1fr);
+  gap:40px;
+  max-width:900px;
+  margin:40px auto 60px auto;
 }
-
 .stat{
   text-align:center;
   padding:20px 10px;
