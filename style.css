@@ -276,6 +276,13 @@ header{
   align-items:center;
 }
 
+.logo a{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:14px;
+}
+
 .logo img{
   height:86px;
   width:auto;
