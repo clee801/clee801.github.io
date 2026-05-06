@@ -1707,6 +1707,7 @@ header{
   grid-template-columns: 1fr;
   gap: 28px;
   text-align: center;
+   width: calc(100% - 24px);
 }
 
   .footer-brand,
