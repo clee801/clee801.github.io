@@ -1589,6 +1589,9 @@ header{
   max-height:none;
   display:block;
   margin-bottom:18px;
+   -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
   .how-it-works,
