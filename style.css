@@ -1746,6 +1746,10 @@ header{
     margin-top: 30px;
     padding-top: 16px;
   }
+
+   .site-footer {
+  padding: 48px 16px 24px;
+}
 }
 
 /* =========================
