@@ -538,10 +538,13 @@ header{
 .hero-divider{
   position: absolute;
   left: 0;
+  bottom: 0;
   width: 100%;
-  z-index: 2;
+  line-height: 0;
+  overflow: hidden;
+  transform: translateY(50%); 
+  z-index: 5;
 }
-
 .hero-divider svg{
   display: block;
 }
