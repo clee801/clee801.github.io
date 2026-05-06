@@ -254,7 +254,7 @@ header{
   position:sticky;
   top:0;
   z-index:3000;
-  background: rgba(var(--purple-rgb), 0.90);
+  background: rgba(var(--purple-rgb), 1);
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid rgba(255,255,255,0.12);
