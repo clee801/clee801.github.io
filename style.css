@@ -1873,13 +1873,42 @@ body.home{
 }
 
 /* =========================
-   FOOTER
+   FOOTER 
 ========================= */
 
 .site-footer{
-  background: var(--purple);
+  background: linear-gradient(
+    180deg,
+    var(--purple) 0%,
+    #4f3451 100%
+  );
   color: #fffdf8;
-  padding: 60px 24px 24px;
+  padding: 70px 24px 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer::before,
+.site-footer::after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background: var(--gold);
+  opacity:0.10;
+  filter: blur(40px);
+  z-index:0;
+}
+
+.site-footer::before{
+  top:-80px;
+  left:-60px;
+}
+
+.site-footer::after{
+  bottom:-100px;
+  right:-60px;
 }
 
 .footer-content{
@@ -1889,24 +1918,30 @@ body.home{
   grid-template-columns: 2fr 1fr 1fr;
   gap: 50px;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-brand h3{
   font-family: 'Fraunces', serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin: 0 0 10px 0;
+  color: var(--cream);
 }
 
 .footer-brand p{
   margin: 0;
   opacity: 0.85;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: rgba(255, 245, 223, 0.9);
 }
 
 .footer-links h4{
-  margin: 0 0 12px 0;
-  font-size: 1.1rem;
-  color: #fffdf8;
+  margin: 0 0 14px 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
 .footer-link{
@@ -1915,18 +1950,23 @@ body.home{
   gap: 10px;
   text-decoration: none;
   color: #fffdf8;
-  opacity: 0.85;
+  opacity: 0.88;
   margin-bottom: 10px;
-  transition: opacity 0.2s ease;
+  transition: all 0.25s ease;
+  padding: 6px 0;
+  border-radius: 10px;
 }
 
 .footer-link:hover{
   opacity: 1;
+  color: var(--gold);
+  transform: translateX(4px);
 }
 
 .footer-icon svg{
   width: 18px;
   height: 18px;
+  color: var(--gold);
 }
 
 .footer-bottom{
@@ -1934,7 +1974,12 @@ body.home{
   margin: 40px auto 0 auto;
   text-align: center;
   font-size: 0.85rem;
-  opacity: 0.7;
-  border-top: 1px solid rgba(255,255,255,0.15);
+  opacity: 0.75;
+  border-top: 1px solid rgba(243, 197, 103, 0.25);
   padding-top: 20px;
+  color: rgba(255, 245, 223, 0.85);
+}
+
+.footer-link:hover svg{
+  color: var(--cream);
 }
