@@ -1578,10 +1578,18 @@ header{
   }
 
   .photo-masonry{
-    column-count:2;
-    width:calc(100% - 24px);
-    margin-bottom:72px;
-  }
+  column-count:1;
+  width:calc(100% - 24px);
+  margin-bottom:72px;
+}
+
+.photo-masonry img{
+  width:100%;
+  height:auto;
+  max-height:none;
+  display:block;
+  margin-bottom:18px;
+}
 
   .how-it-works,
   .network-section{
