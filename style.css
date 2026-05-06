@@ -1437,10 +1437,6 @@ header{
   .project-gallery{
     grid-template-columns:1fr 1fr;
   }
-
-  .footer-content{
-    grid-template-columns:1fr 1fr;
-  }
 }
 
 /* =========================
