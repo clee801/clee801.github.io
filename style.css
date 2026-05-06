@@ -2054,6 +2054,21 @@ header{
   font-size:1.3rem;
   color:var(--text-soft);
 }
+.impact-stats{
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-stats::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("crochet-pattern.png");
+  background-size: 520px;
+  opacity: 0.08; /* keep it VERY subtle */
+  pointer-events: none;
+  z-index: 0;
+}
 
 /* DIVIDER */
 .impact-divider{
