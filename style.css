@@ -1721,22 +1721,22 @@ header{
     width:100%;
     max-width:100%;
   }
-   .support-page{
+  .support-page{
     padding:60px 16px 72px 16px;
   }
 
   .support-hero-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr !important;
     gap:28px;
   }
 
   .sponsor-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr !important;
     gap:12px;
   }
 
   .support-options-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr !important;
     gap:16px;
   }
 
@@ -1748,6 +1748,20 @@ header{
   .donate-button{
     width:100%;
     text-align:center;
+  }
+
+  .support-hero-left h1{
+    font-size:2.2rem;
+  }
+
+  .sponsor-box,
+  .support-option-card,
+  .support-info-card{
+    padding:20px 16px;
+  }
+
+  .support-left h2{
+    font-size:1.8rem;
   }
    
 .footer-content{
