@@ -2054,21 +2054,6 @@ header{
   font-size:1.3rem;
   color:var(--text-soft);
 }
-.impact-stats{
-  position: relative;
-  overflow: hidden;
-}
-
-.impact-stats::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("crochet-pattern.png");
-  background-size: 520px;
-  opacity: 0.08; /* keep it VERY subtle */
-  pointer-events: none;
-  z-index: 0;
-}
 
 /* DIVIDER */
 .impact-divider{
@@ -2094,4 +2079,12 @@ header{
   margin-top:6px;
   font-size:1.05rem;
   color:var(--text-soft);
+}
+
+body.home{
+  background:
+    linear-gradient(rgba(255,246,224,0.78), rgba(255,246,224,0.78)),
+    url("crochet-pattern.png");
+  background-size: cover, 520px;
+  background-repeat: no-repeat, repeat;
 }
