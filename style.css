@@ -288,6 +288,16 @@ header{
   width:auto;
 }
 
+.logo-icon{
+  height:96px;
+  width:auto;
+}
+
+.logo-text{
+  height:46px;
+  width:auto;
+}
+
 .site-nav{
   display:flex;
   align-items:center;
