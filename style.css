@@ -1579,8 +1579,13 @@ header{
 
   .photo-masonry{
   column-count:1;
-  width:calc(100% - 24px);
   margin-bottom:72px;
+   width: 100% !important;
+  height: 260px !important;
+  max-height: none !important;
+  display: block !important;
+  object-fit: cover;
+  margin-bottom: 18px;
 }
 
 .photo-masonry img{
