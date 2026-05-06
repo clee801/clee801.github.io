@@ -542,12 +542,8 @@ header{
   height:110px;
 }
 
-.hero-divider path{
-  fill:var(--bg-soft);
-}
-
 .footer-wave path{
-  fill:var(--purple);
+  fill: var(--purple);
 }
 
 /* =========================
