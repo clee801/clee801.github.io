@@ -1875,3 +1875,47 @@ body.home{
   background-size: cover, 520px;
   background-repeat: no-repeat, repeat;
 }
+
+.footer{
+  background: var(--purple);
+  color: #fffdf8;
+  padding: 60px 24px 30px;
+}
+
+.footer-content{
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-brand{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link{
+  color: #fffdf8;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.footer-link:hover{
+  opacity: 1;
+}
+
+.footer-bottom{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
