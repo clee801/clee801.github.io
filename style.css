@@ -1702,9 +1702,9 @@ header{
     max-width:100%;
   }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr;
+.footer-content{
+  display: grid !important;
+  grid-template-columns: 1fr !important;
   gap: 20px;
   text-align: center;
   width: calc(100% - 32px);
@@ -1742,12 +1742,12 @@ header{
   transform: none;
 }
 
-  .footer-bottom{
-    margin-top: 30px;
-    padding-top: 16px;
-  }
+ .footer-bottom{
+  width: 100%;
+  margin: 24px auto 0 auto;
+}
 
-   .site-footer {
+   .site-footer{
   padding: 48px 16px 24px;
 }
 }
