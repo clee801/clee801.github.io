@@ -1578,27 +1578,23 @@ header{
   }
 
   .photo-masonry{
-  column-count:1;
-  margin-bottom:72px;
-   width: 100% !important;
-  height: 260px !important;
-  max-height: none !important;
-  display: block !important;
-  object-fit: cover;
-  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  column-count: unset;
+  width: calc(100% - 24px);
+  margin: 0 auto 72px auto;
 }
 
 .photo-masonry img{
-  width:100%;
-  height:auto;
-  max-height:none;
-  display:block;
-  margin-bottom:18px;
-   -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
+  width: 100% !important;
+  height: 180px !important;
+  max-height: none !important;
+  display: block !important;
+  object-fit: cover;
+  margin-bottom: 0;
+  border-radius: 16px;
 }
-
   .how-it-works,
   .network-section{
     width:calc(100% - 24px);
