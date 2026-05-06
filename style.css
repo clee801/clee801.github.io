@@ -1703,11 +1703,11 @@ header{
   }
 
 .footer-content{
-    grid-template-columns: 1fr;
-    gap: 32px;
-    text-align: center;
-    padding: 0 10px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  text-align: center;
+}
 
   .footer-brand,
   .footer-links{
