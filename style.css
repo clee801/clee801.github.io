@@ -535,6 +535,10 @@ header{
   overflow:hidden;
 }
 
+.footer-wave path{
+  fill: rgba(149, 102, 150, 0.9);
+}
+
 .hero-divider{
   position: absolute;
   left: 0;
