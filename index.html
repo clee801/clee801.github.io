@@ -259,6 +259,7 @@ document.addEventListener('click', () => {
 });
 
 /* REVEAL ON SCROLL */
+/* REVEAL ON SCROLL */
 const revealItems = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -271,17 +272,21 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealItems.forEach(el => revealObserver.observe(el));
 
-const counters = document.querySelectorAll('.stat h3');
-const statsSection = document.querySelector('.stats');
+/* COUNT-UP STATS (UPDATED FOR NEW STRUCTURE) */
+const counters = document.querySelectorAll('.impact-main h2, .impact-small h3');
+const statsSection = document.querySelector('.impact-stats');
 
 const runCounters = () => {
   counters.forEach((counter, index) => {
-    const target = +counter.innerText;
+    const target = parseInt(counter.innerText, 10);
+
+    // safety: avoid re-running broken animation
+    if (isNaN(target)) return;
+
+    const duration = 1200;
+    const startTime = performance.now();
 
     setTimeout(() => {
-      const duration = 1200;
-      const startTime = performance.now();
-
       const update = (time) => {
         const progress = Math.min((time - startTime) / duration, 1);
         counter.innerText = Math.floor(progress * target);
@@ -294,7 +299,7 @@ const runCounters = () => {
       };
 
       requestAnimationFrame(update);
-    }, index * 200); // stagger effect
+    }, index * 180);
   });
 };
 
@@ -306,8 +311,7 @@ const statsObserver = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.7,
-  rootMargin: "0px 0px -100px 0px"
+  threshold: 0.5
 });
 
 if (statsSection) {
